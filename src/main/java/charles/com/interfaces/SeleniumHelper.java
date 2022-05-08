@@ -25,7 +25,7 @@ public interface SeleniumHelper extends SeleniumHelperElement {
     }
 
     default String getTitle() {
-        return DriverFactory.getInstance().getDriver().getTitle();
+        return getDriver().getTitle();
     }
 
     default String getUrl() {
