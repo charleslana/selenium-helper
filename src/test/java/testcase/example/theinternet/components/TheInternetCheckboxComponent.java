@@ -1,9 +1,9 @@
-package testcase.example.components;
+package testcase.example.theinternet.components;
 
 import charles.com.interfaces.SeleniumHelper;
 import charles.com.interfaces.SeleniumHelperElements;
 import org.junit.jupiter.api.Assertions;
-import testcase.example.pageobjects.TheInternetPage;
+import testcase.example.theinternet.pageobjects.TheInternetPage;
 
 public interface TheInternetCheckboxComponent extends SeleniumHelper, SeleniumHelperElements {
 

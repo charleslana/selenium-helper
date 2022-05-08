@@ -1,4 +1,4 @@
-package testcase.example.pageobjects;
+package testcase.example.theinternet.pageobjects;
 
 public class TheInternetPage {
 

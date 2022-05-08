@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/browser/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/factory/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/properties/PropertiesOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/setup/SeleniumHelperSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/utils/FunctionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver_linux64_v_97.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/edgedriver_linux64.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver-v0.30.0-linux64.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/webdriver/msedgedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/SeleniumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/components/SeleniumImplicitWaitComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/components/TheInternetCheckboxComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/SeleniumPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/TheInternetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/components/SeleniumImplicitWaitComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumImplicitWaitComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/components/TheInternetCheckboxComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/theinternet/components/TheInternetCheckboxComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/SeleniumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/pageobjects/SeleniumPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/TheInternetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/theinternet/pageobjects/TheInternetPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +45,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,39 +54,39 @@
       <recent name="charles.com.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SeleniumTest">
-    <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ExampleTest">
+    <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.example.SeleniumTest" />
+          <option name="PATTERN" value="testcase.example.ExampleTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
-      <option name="MAIN_CLASS_NAME" value="testcase.example.SeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.example.SeleniumTest" />
+          <option name="PATTERN" value="testcase.example.ExampleTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
-      <option name="MAIN_CLASS_NAME" value="testcase.example.SeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +95,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
-      <option name="MAIN_CLASS_NAME" value="testcase.example.SeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +111,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
-      <option name="MAIN_CLASS_NAME" value="testcase.example.SeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
@@ -149,7 +127,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
-      <option name="MAIN_CLASS_NAME" value="testcase.example.SeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
       <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -158,13 +136,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeleniumTest" />
-        <item itemvalue="JUnit.SeleniumTest.test5" />
-        <item itemvalue="JUnit.SeleniumTest.test4" />
-        <item itemvalue="JUnit.SeleniumTest.test3" />
-        <item itemvalue="JUnit.SeleniumTest.test1" />
+        <item itemvalue="JUnit.ExampleTest" />
+        <item itemvalue="JUnit.ExampleTest.test5" />
+        <item itemvalue="JUnit.ExampleTest.test4" />
+        <item itemvalue="JUnit.ExampleTest.test3" />
+        <item itemvalue="JUnit.ExampleTest.test1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -175,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652016960062</updated>
       <workItem from="1652016961759" duration="689000" />
-      <workItem from="1652017676874" duration="13271000" />
+      <workItem from="1652017676874" duration="13857000" />
     </task>
     <servers />
   </component>

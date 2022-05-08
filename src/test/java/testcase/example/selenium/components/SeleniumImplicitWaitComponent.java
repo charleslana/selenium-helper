@@ -1,9 +1,9 @@
-package testcase.example.components;
+package testcase.example.selenium.components;
 
 import charles.com.interfaces.SeleniumHelper;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.Keys;
-import testcase.example.pageobjects.SeleniumPage;
+import testcase.example.selenium.pageobjects.SeleniumPage;
 
 public interface SeleniumImplicitWaitComponent extends SeleniumHelper {
 
