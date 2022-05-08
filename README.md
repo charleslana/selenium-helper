@@ -1,0 +1,1 @@
+### Selenium architecture based on developing components
