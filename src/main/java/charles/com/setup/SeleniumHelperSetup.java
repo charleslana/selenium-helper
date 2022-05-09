@@ -1,6 +1,5 @@
 package charles.com.setup;
 
-import charles.com.browser.Browser;
 import charles.com.factory.DriverFactory;
 import charles.com.properties.PropertiesOperations;
 import org.junit.jupiter.api.AfterEach;

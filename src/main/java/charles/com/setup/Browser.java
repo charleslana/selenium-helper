@@ -1,4 +1,4 @@
-package charles.com.browser;
+package charles.com.setup;
 
 import charles.com.properties.PropertiesOperations;
 import charles.com.utils.FunctionUtils;
@@ -14,7 +14,7 @@ public class Browser {
 
     Boolean hasHeadless = Boolean.parseBoolean(PropertiesOperations.getPropertyValueByKey("headless"));
 
-    public WebDriver createBrowserInstance(String browser) {
+    protected WebDriver createBrowserInstance(String browser) {
         return switch (browser) {
             case "edge" -> setupEdge();
             case "firefox" -> setupFirefox();
