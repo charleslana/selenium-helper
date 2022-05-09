@@ -4,11 +4,11 @@ import charles.com.interfaces.SeleniumHelper;
 import charles.com.setup.SeleniumHelperSetup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import testcase.example.selenium.components.SeleniumImplicitWaitComponent;
+import testcase.example.selenium.components.SeleniumWaitComponent;
 import testcase.example.theinternet.components.TheInternetCheckboxComponent;
 import testcase.example.theinternet.pageobjects.TheInternetPage;
 
-class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, TheInternetCheckboxComponent, SeleniumImplicitWaitComponent {
+class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, SeleniumWaitComponent, TheInternetCheckboxComponent {
 
     @Test
     void test1() {
@@ -38,6 +38,6 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, TheInte
 
     @Test
     void test5() {
-        searchImplicitWait();
+        searchWait();
     }
 }

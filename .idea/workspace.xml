@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/components/SeleniumImplicitWaitComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumImplicitWaitComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/components/TheInternetCheckboxComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/theinternet/components/TheInternetCheckboxComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/SeleniumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/pageobjects/SeleniumPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/pageobjects/TheInternetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/theinternet/pageobjects/TheInternetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumImplicitWaitComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumWaitComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652016960062</updated>
       <workItem from="1652016961759" duration="689000" />
-      <workItem from="1652017676874" duration="13857000" />
+      <workItem from="1652017676874" duration="14684000" />
     </task>
     <servers />
   </component>

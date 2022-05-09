@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.Keys;
 import testcase.example.selenium.pageobjects.SeleniumPage;
 
-public interface SeleniumImplicitWaitComponent extends SeleniumHelper {
+public interface SeleniumWaitComponent extends SeleniumHelper {
 
-    default void searchImplicitWait() {
+    default void searchWait() {
         navigate("https://www.selenium.dev/");
         clearByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME);
-        typeByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME, "Implicit wait");
+        typeByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME, "Waits");
         waitVisibilityByClassName(SeleniumPage.DROPDOWN_MENU_SEARCH_BY_CLASSNAME);
         typeByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME, Keys.ENTER);
         Assertions.assertTrue(getTitle().contains("Waits"));
