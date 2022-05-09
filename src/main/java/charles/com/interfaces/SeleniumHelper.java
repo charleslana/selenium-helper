@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.function.Function;
 
-public interface SeleniumHelper extends SeleniumHelperElement {
+public interface SeleniumHelper extends SeleniumHelperElement, SeleniumHelperElements {
 
     default void clearByClassName(String className) {
         findByClassName(className).clear();
