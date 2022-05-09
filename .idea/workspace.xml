@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/example/utils/UrlUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumImplicitWaitComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumWaitComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -154,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652016960062</updated>
       <workItem from="1652016961759" duration="689000" />
-      <workItem from="1652017676874" duration="14684000" />
+      <workItem from="1652017676874" duration="14988000" />
     </task>
     <servers />
   </component>
