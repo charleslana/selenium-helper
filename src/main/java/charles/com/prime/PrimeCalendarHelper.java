@@ -58,7 +58,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     private void selectMonthPicker(LocalDate date) {
         waitVisibility(monthPicker);
         for (WebElement month : monthPickerMonths) {
-            if (month.getText().equalsIgnoreCase(date.getMonth().toString())) {
+            if (month.getText().equalsIgnoreCase(date.getMonth().toString().substring(0, 3))) {
                 click(month);
                 break;
             }
