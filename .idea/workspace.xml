@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeAutocompleteHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeCalendarHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4a4bdda62ea6e6fd30494b4284e79cf013e5a3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperGetText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperGetText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeSeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeDropdownHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeCalendarHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeCalendarHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,22 @@
       <recent name="charles.com.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest.test8">
+  <component name="RunManager" selected="JUnit.ExampleTest">
+    <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.example" />
+      <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExampleTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
@@ -114,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheInternetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheInternetTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
@@ -124,25 +132,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example.theinternet.test" />
       <option name="MAIN_CLASS_NAME" value="testcase.example.theinternet.test.TheInternetTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest" />
+        <item itemvalue="JUnit.TheInternetTest.test1" />
         <item itemvalue="JUnit.ExampleTest.test8" />
         <item itemvalue="JUnit.ExampleTest.test7" />
         <item itemvalue="JUnit.ExampleTest.test6" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.TheInternetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +166,7 @@
       <workItem from="1652101014736" duration="12058000" />
       <workItem from="1652144542253" duration="438000" />
       <workItem from="1652145038272" duration="313000" />
-      <workItem from="1652191354523" duration="22551000" />
+      <workItem from="1652191354523" duration="22936000" />
     </task>
     <servers />
   </component>

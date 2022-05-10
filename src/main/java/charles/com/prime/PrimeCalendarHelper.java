@@ -2,7 +2,6 @@ package charles.com.prime;
 
 import charles.com.factory.DriverFactory;
 import charles.com.interfaces.SeleniumHelperClick;
-import charles.com.interfaces.SeleniumHelperGetText;
 import charles.com.interfaces.SeleniumHelperWait;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.LocalDate;
 import java.util.List;
 
-public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperGetText, SeleniumHelperWait {
+public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperWait {
 
     public PrimeCalendarHelper() {
         PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
@@ -54,7 +53,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperG
 
     private void selectDayPicker(LocalDate date) {
         for (WebElement day : datepickerDays) {
-            if (getText(day).equals(String.valueOf(date.getDayOfMonth()))) {
+            if (day.getText().equals(String.valueOf(date.getDayOfMonth()))) {
                 click(day);
                 break;
             }
@@ -63,7 +62,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperG
 
     private void selectMonthPicker(LocalDate date) {
         for (WebElement month : monthPickerMonths) {
-            if (getText(month).equalsIgnoreCase(date.getMonth().toString())) {
+            if (month.getText().equalsIgnoreCase(date.getMonth().toString())) {
                 click(month);
                 break;
             }
@@ -72,7 +71,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperG
 
     private void selectYearPicker(LocalDate date) {
         for (WebElement year : yearPickerYears) {
-            if (getText(year).equals(String.valueOf(date.getYear()))) {
+            if (year.getText().equals(String.valueOf(date.getYear()))) {
                 click(year);
                 break;
             }

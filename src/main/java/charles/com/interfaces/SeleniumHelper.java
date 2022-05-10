@@ -3,7 +3,7 @@ package charles.com.interfaces;
 import charles.com.factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
-public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick, SeleniumHelperElement, SeleniumHelperElements, SeleniumHelperGetText, SeleniumHelperType, SeleniumHelperWait {
+public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick, SeleniumHelperElement, SeleniumHelperElements, SeleniumHelperType, SeleniumHelperWait {
 
     default String getTitle() {
         return getDriver().getTitle();

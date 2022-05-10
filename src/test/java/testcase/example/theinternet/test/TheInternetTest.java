@@ -13,7 +13,7 @@ class TheInternetTest extends SeleniumHelperSetup implements SeleniumHelper, The
     @Test
     void test1() {
         navigate(UrlUtils.URL_THE_INTERNET.concat("/context_menu"));
-        Assertions.assertEquals("Context Menu", getTextByTagName(TheInternetPage.TITLE_BY_TAG_NAME));
+        Assertions.assertEquals("Context Menu", findByTagName(TheInternetPage.TITLE_BY_TAG_NAME).getText());
     }
 
     @Test
