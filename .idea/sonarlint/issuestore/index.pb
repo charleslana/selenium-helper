@@ -16,8 +16,6 @@ m
 =src/main/java/charles/com/interfaces/SeleniumHelperClear.java,0/e/0eef09f35aa28d97144090e9267550ff7fa40ec1
 {
 Ksrc/test/java/testcase/example/theinternet/pageobjects/TheInternetPage.java,1/a/1aef2ed6c6d98b0d9fb1602822422c4ef3ff3986
-o
-?src/main/java/charles/com/interfaces/SeleniumHelperGetText.java,1/e/1e4a4bdda62ea6e6fd30494b4284e79cf013e5a3
 }
 Msrc/test/java/testcase/example/selenium/components/SeleniumWaitComponent.java,a/0/a0648e768d6ed803eb87ae18c3fd552b89faec73
 …

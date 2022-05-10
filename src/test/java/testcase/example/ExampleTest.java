@@ -1,7 +1,9 @@
 package testcase.example;
 
 import charles.com.interfaces.SeleniumHelper;
-import charles.com.prime.PrimeSeleniumHelper;
+import charles.com.prime.PrimeAutocompleteHelper;
+import charles.com.prime.PrimeCalendarHelper;
+import charles.com.prime.PrimeDropdownHelper;
 import charles.com.setup.SeleniumHelperSetup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -9,6 +11,8 @@ import testcase.example.selenium.components.SeleniumWaitComponent;
 import testcase.example.theinternet.components.TheInternetCheckboxComponent;
 import testcase.example.theinternet.pageobjects.TheInternetPage;
 import testcase.example.utils.UrlUtils;
+
+import java.time.LocalDate;
 
 class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, SeleniumWaitComponent, TheInternetCheckboxComponent {
 
@@ -46,14 +50,21 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, Seleniu
     @Test
     void test6() {
         navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/dropdown"));
-        PrimeSeleniumHelper prime = new PrimeSeleniumHelper();
-        prime.clickDropdown(0);
+        PrimeDropdownHelper prime = new PrimeDropdownHelper();
+        prime.click(0);
     }
 
     @Test
     void test7() {
         navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/autocomplete"));
-        PrimeSeleniumHelper prime = new PrimeSeleniumHelper();
-        prime.typeAutocomplete(1, "Brazil");
+        PrimeAutocompleteHelper prime = new PrimeAutocompleteHelper();
+        prime.type(1, "Brazil");
+    }
+
+    @Test
+    void test8() {
+        navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/calendar"));
+        PrimeCalendarHelper prime = new PrimeCalendarHelper();
+        prime.selectDatePopup(13, LocalDate.of(2022, 5, 31));
     }
 }

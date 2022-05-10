@@ -1,6 +1,12 @@
 package charles.com.interfaces;
 
+import org.openqa.selenium.WebElement;
+
 public interface SeleniumHelperGetText extends SeleniumHelperElement {
+
+    default String getText(WebElement element) {
+        return element.getText();
+    }
 
     default String getTextByClassName(String className) {
         return findByClassName(className).getText();
