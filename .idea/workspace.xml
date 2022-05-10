@@ -58,7 +58,7 @@
       <recent name="charles.com.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest">
+  <component name="RunManager" selected="JUnit.ExampleTest.test8">
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
@@ -140,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest.test8" />
         <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.TheInternetTest.test1" />
-        <item itemvalue="JUnit.ExampleTest.test8" />
         <item itemvalue="JUnit.ExampleTest.test7" />
         <item itemvalue="JUnit.ExampleTest.test6" />
       </list>
@@ -166,7 +166,7 @@
       <workItem from="1652101014736" duration="12058000" />
       <workItem from="1652144542253" duration="438000" />
       <workItem from="1652145038272" duration="313000" />
-      <workItem from="1652191354523" duration="22936000" />
+      <workItem from="1652191354523" duration="23518000" />
     </task>
     <servers />
   </component>

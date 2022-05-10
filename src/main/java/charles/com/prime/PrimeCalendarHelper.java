@@ -40,13 +40,8 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     public void selectDatePopup(Integer calendarIndex, LocalDate date) {
         click(calendars.get(calendarIndex));
         waitVisibility(datepickerCalendars.get(0));
-        click(datepickerYears, 0);
-        waitVisibility(yearPicker);
         selectYearPicker(date);
-        waitInvisibility(yearPicker);
-        waitVisibility(monthPicker);
         selectMonthPicker(date);
-        waitInvisibility(monthPicker);
         selectDayPicker(date);
         waitInvisibility(datepickerCalendars.get(0));
     }
@@ -61,20 +56,25 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     }
 
     private void selectMonthPicker(LocalDate date) {
+        waitVisibility(monthPicker);
         for (WebElement month : monthPickerMonths) {
             if (month.getText().equalsIgnoreCase(date.getMonth().toString())) {
                 click(month);
                 break;
             }
         }
+        waitInvisibility(monthPicker);
     }
 
     private void selectYearPicker(LocalDate date) {
+        click(datepickerYears, 0);
+        waitVisibility(yearPicker);
         for (WebElement year : yearPickerYears) {
             if (year.getText().equals(String.valueOf(date.getYear()))) {
                 click(year);
                 break;
             }
         }
+        waitInvisibility(yearPicker);
     }
 }
