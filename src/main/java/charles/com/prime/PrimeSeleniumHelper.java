@@ -38,11 +38,11 @@ public class PrimeSeleniumHelper implements SeleniumHelper {
         waitInvisibility(dropdownItemsWrapper);
     }
 
-    public void typeAndSelectAutocomplete(String textToType) {
-        typeAndSelectAutocomplete(0, textToType);
+    public void typeAutocomplete(String textToType) {
+        typeAutocomplete(0, textToType);
     }
 
-    public void typeAndSelectAutocomplete(Integer autoCompleteIndex, String textToType) {
+    public void typeAutocomplete(Integer autoCompleteIndex, String textToType) {
         type(autoCompleteInput.get(autoCompleteIndex), textToType);
         waitVisibility(autoCompletePanel);
         click(autoCompleteItem, 0);

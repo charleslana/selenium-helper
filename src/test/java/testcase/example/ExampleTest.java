@@ -54,6 +54,6 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, Seleniu
     void test7() {
         navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/autocomplete"));
         PrimeSeleniumHelper prime = new PrimeSeleniumHelper();
-        prime.typeAndSelectAutocomplete(1, "Brazil");
+        prime.typeAutocomplete(1, "Brazil");
     }
 }

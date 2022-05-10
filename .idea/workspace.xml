@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeSeleniumHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/818103d21328dbf91a9065b54f18abf253df77dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperAwait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperAwait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/interfaces/SeleniumHelperWait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/setup/SeleniumHelperSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/setup/SeleniumHelperSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webdriver/msedgedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/msedgedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeSeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/charles/com/prime/PrimeSeleniumHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/ExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/utils/UrlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/utils/UrlUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +160,7 @@
       <workItem from="1652101014736" duration="12058000" />
       <workItem from="1652144542253" duration="438000" />
       <workItem from="1652145038272" duration="313000" />
-      <workItem from="1652191354523" duration="12182000" />
+      <workItem from="1652191354523" duration="13083000" />
     </task>
     <servers />
   </component>
