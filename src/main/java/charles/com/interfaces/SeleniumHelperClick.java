@@ -1,6 +1,18 @@
 package charles.com.interfaces;
 
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
 public interface SeleniumHelperClick extends SeleniumHelperElement {
+
+    default void click(WebElement element) {
+        element.click();
+    }
+
+    default void click(List<WebElement> element, Integer clickIndex) {
+        element.get(clickIndex).click();
+    }
 
     default void clickByClassName(String className) {
         findByClassName(className).click();

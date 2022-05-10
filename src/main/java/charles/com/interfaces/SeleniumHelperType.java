@@ -4,6 +4,10 @@ import org.openqa.selenium.WebElement;
 
 public interface SeleniumHelperType extends SeleniumHelperElement {
 
+    default void type(WebElement element, CharSequence textToType) {
+        sendKeys(element, textToType);
+    }
+
     default void typeByClassName(String className, CharSequence textToType) {
         sendKeys(findByClassName(className), textToType);
     }

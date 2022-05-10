@@ -11,7 +11,7 @@ import java.util.function.Function;
 public interface SeleniumHelperAwait {
 
     default <T> void await(Function<? super WebDriver, T> isTrue) {
-        WebDriverWait webDriverWait = new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(Integer.parseInt(PropertiesOperations.getPropertyValueByKey("implicitly-wait"))));
+        WebDriverWait webDriverWait = new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(Integer.parseInt(PropertiesOperations.getPropertyValueByKey("web-driver-wait"))));
         webDriverWait.until(isTrue);
     }
 }

@@ -1,6 +1,7 @@
 package testcase.example;
 
 import charles.com.interfaces.SeleniumHelper;
+import charles.com.prime.PrimeSeleniumHelper;
 import charles.com.setup.SeleniumHelperSetup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -40,5 +41,19 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, Seleniu
     @Test
     void test5() {
         searchWait();
+    }
+
+    @Test
+    void test6() {
+        navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/dropdown"));
+        PrimeSeleniumHelper prime = new PrimeSeleniumHelper();
+        prime.clickDropdown(0);
+    }
+
+    @Test
+    void test7() {
+        navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/autocomplete"));
+        PrimeSeleniumHelper prime = new PrimeSeleniumHelper();
+        prime.typeAndSelectAutocomplete(1, "Brazil");
     }
 }

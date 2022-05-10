@@ -1,8 +1,19 @@
 package charles.com.interfaces;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperElement {
+
+    default void waitInvisibility(WebElement element) {
+        await(ExpectedConditions.invisibilityOf(element));
+    }
+
+    default void waitInvisibility(List<WebElement> element, Integer invisibilityIndex) {
+        await(ExpectedConditions.invisibilityOf(element.get(invisibilityIndex)));
+    }
 
     default void waitInvisibilityByClassName(String className) {
         await(ExpectedConditions.invisibilityOf(findByClassName(className)));
@@ -62,6 +73,14 @@ public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperE
 
     default void waitInvisibilityByXpath(String xpath, Integer xpathIndex) {
         await(ExpectedConditions.invisibilityOf(findAllByXpath(xpath).get(xpathIndex)));
+    }
+
+    default void waitVisibility(WebElement element) {
+        await(ExpectedConditions.visibilityOf(element));
+    }
+
+    default void waitVisibility(List<WebElement> element, Integer visibilityIndex) {
+        await(ExpectedConditions.visibilityOf(element.get(visibilityIndex)));
     }
 
     default void waitVisibilityByClassName(String className) {
