@@ -22,6 +22,10 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     private List<WebElement> datepickerCalendars;
     @FindBy(css = ".p-datepicker-calendar td > span:not(.p-disabled)")
     private List<WebElement> datepickerDays;
+    @FindBy(className = "p-datepicker-next")
+    private List<WebElement> datepickerNext;
+    @FindBy(className = "p-datepicker-prev")
+    private List<WebElement> datepickerPrev;
     @FindBy(className = "p-datepicker-year")
     private List<WebElement> datepickerYears;
     @FindBy(className = "p-monthpicker")
@@ -46,6 +50,16 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
         waitInvisibility(datepickerCalendars.get(0));
     }
 
+    private void searchYear(LocalDate date, boolean isSearch) {
+        if (isSearch) {
+            if (date.getYear() < LocalDate.now().getYear()) {
+                click(datepickerPrev, 0);
+            } else {
+                click(datepickerNext, 0);
+            }
+        }
+    }
+
     private void selectDayPicker(LocalDate date) {
         for (WebElement day : datepickerDays) {
             if (day.getText().equals(String.valueOf(date.getDayOfMonth()))) {
@@ -66,14 +80,23 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
         waitInvisibility(monthPicker);
     }
 
-    private void selectYearPicker(LocalDate date) {
-        click(datepickerYears, 0);
-        waitVisibility(yearPicker);
+    private boolean selectYear(LocalDate date) {
         for (WebElement year : yearPickerYears) {
             if (year.getText().equals(String.valueOf(date.getYear()))) {
                 click(year);
-                break;
+                return false;
             }
+        }
+        return true;
+    }
+
+    private void selectYearPicker(LocalDate date) {
+        click(datepickerYears, 0);
+        waitVisibility(yearPicker);
+        boolean isSearch = true;
+        while (isSearch) {
+            isSearch = selectYear(date);
+            searchYear(date, isSearch);
         }
         waitInvisibility(yearPicker);
     }

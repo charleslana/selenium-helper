@@ -65,6 +65,6 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, Seleniu
     void test8() {
         navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/calendar"));
         PrimeCalendarHelper prime = new PrimeCalendarHelper();
-        prime.selectDatePopup(13, LocalDate.of(2022, 5, 31));
+        prime.selectDatePopup(13, LocalDate.of(2000, 12, 31));
     }
 }
