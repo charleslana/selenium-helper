@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8c3a0f-d7e3-48da-9f63-e1dbf8aa10c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0eef09f35aa28d97144090e9267550ff7fa40ec1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/178e5e8bc30ea1784b2edbc4c1684384149083f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26593439b9e5ccadbf901b1a80dcdbd89d799f17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/3559fd29d78444657f55f342ff738a7f336fe46b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d425d5308c00e2bfb27211713f068257fbb3e1d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d37f0acccc372e6ced0eb0cbd60457bd3c8cdc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f0133296d18e32076a1eed2c335a37c66fe645b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0648e768d6ed803eb87ae18c3fd552b89faec73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a555bb7c099ec3af0f4c6f3cf4302b25cf50feaf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa855ef47a8c3f3c2b83a333ad21064ad7d0769f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af26d671f8fce18ade7c7300fff1a895c1047288" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc10b4c810106b92c32133c6e4aed435ce0fc46a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c178d03527c6974948734c77fd83b9fd27e63c5c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e309e8511496be304c8817858b54065de73625d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6d328d382475a5ce505d6af2480ba3680810edb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6d4f0f65df27f87da95669f1330e9a52f49632d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/geckodriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webdriver/msedgedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/msedgedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumWaitComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/components/SeleniumWaitComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/pageobjects/SeleniumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/example/selenium/pageobjects/SeleniumPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +79,7 @@
       <recent name="charles.com.interfaces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest.test8">
+  <component name="RunManager" selected="JUnit.ExampleTest.test5">
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
@@ -76,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-helper" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcase.example" />
       <option name="MAIN_CLASS_NAME" value="testcase.example.ExampleTest" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest.test5" />
+        <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.ExampleTest.test8" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.TheInternetTest.test1" />
-        <item itemvalue="JUnit.ExampleTest.test7" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +180,12 @@
       <workItem from="1652145038272" duration="313000" />
       <workItem from="1652191354523" duration="26569000" />
       <workItem from="1652326835051" duration="403000" />
+      <workItem from="1652327291865" duration="345000" />
+      <workItem from="1652328368963" duration="203000" />
+      <workItem from="1652581097144" duration="412000" />
+      <workItem from="1652581541234" duration="47000" />
+      <workItem from="1652581749710" duration="53000" />
+      <workItem from="1652581861997" duration="2639000" />
     </task>
     <servers />
   </component>

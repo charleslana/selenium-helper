@@ -10,10 +10,10 @@ public interface SeleniumWaitComponent extends SeleniumHelper {
 
     default void searchWait() {
         navigate(UrlUtils.URL_SELENIUM);
-        clearByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME);
-        typeByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME, "Waits");
-        waitVisibilityByClassName(SeleniumPage.DROPDOWN_MENU_SEARCH_BY_CLASSNAME);
-        typeByClassName(SeleniumPage.SEARCH_FIELD_BY_CLASSNAME, Keys.ENTER);
+        clickByCss(SeleniumPage.SEARCH_BUTTON_BY_CSS);
+        typeById(SeleniumPage.SEARCH_FIELD_BY_ID, "Waits");
+        waitInvisibilityByClassName(SeleniumPage.SEARCH_EMPTY_BY_CLASSNAME);
+        typeById(SeleniumPage.SEARCH_FIELD_BY_ID, Keys.ENTER);
         Assertions.assertTrue(getTitle().contains("Waits"));
     }
 }
