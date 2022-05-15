@@ -1,4 +1,4 @@
-package charles.com.prime;
+package testcase.example.prime;
 
 import charles.com.factory.DriverFactory;
 import charles.com.interfaces.SeleniumHelperClick;

@@ -1,12 +1,12 @@
 package testcase.example;
 
 import charles.com.interfaces.SeleniumHelper;
-import charles.com.prime.PrimeAutocompleteHelper;
-import charles.com.prime.PrimeCalendarHelper;
-import charles.com.prime.PrimeDropdownHelper;
 import charles.com.setup.SeleniumHelperSetup;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import testcase.example.prime.PrimeAutocompleteHelper;
+import testcase.example.prime.PrimeCalendarHelper;
+import testcase.example.prime.PrimeDropdownHelper;
 import testcase.example.selenium.components.SeleniumWaitComponent;
 import testcase.example.theinternet.components.TheInternetCheckboxComponent;
 import testcase.example.theinternet.pageobjects.TheInternetPage;
