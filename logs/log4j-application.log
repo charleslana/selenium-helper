@@ -1,0 +1,300 @@
+2022-05-15 10:25:09 DEBUG InternalLoggerFactory:89 - Using Log4J as the default logging framework
+2022-05-15 10:25:09 DEBUG ResourceLeakDetector:129 - -Dio.netty.leakDetection.level: simple
+2022-05-15 10:25:09 DEBUG ResourceLeakDetector:130 - -Dio.netty.leakDetection.targetRecords: 4
+2022-05-15 10:25:09 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2ed2d9cb
+2022-05-15 10:25:09 DEBUG PlatformDependent0:460 - -Dio.netty.noUnsafe: false
+2022-05-15 10:25:09 DEBUG PlatformDependent0:954 - Java version: 18
+2022-05-15 10:25:09 DEBUG PlatformDependent0:135 - sun.misc.Unsafe.theUnsafe: available
+2022-05-15 10:25:09 DEBUG PlatformDependent0:159 - sun.misc.Unsafe.copyMemory: available
+2022-05-15 10:25:09 DEBUG PlatformDependent0:202 - java.nio.Buffer.address: available
+2022-05-15 10:25:09 DEBUG PlatformDependent0:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2022-05-15 10:25:09 DEBUG PlatformDependent0:350 - java.nio.Bits.unaligned: available, true
+2022-05-15 10:25:09 DEBUG PlatformDependent0:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @ba4d54
+2022-05-15 10:25:09 DEBUG PlatformDependent0:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2022-05-15 10:25:09 DEBUG PlatformDependent:1116 - sun.misc.Unsafe: available
+2022-05-15 10:25:09 DEBUG PlatformDependent:1227 - maxDirectMemory: 1539309568 bytes (maybe)
+2022-05-15 10:25:09 DEBUG PlatformDependent:1246 - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2022-05-15 10:25:09 DEBUG PlatformDependent:1325 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-05-15 10:25:09 DEBUG PlatformDependent:178 - -Dio.netty.maxDirectMemory: -1 bytes
+2022-05-15 10:25:09 DEBUG PlatformDependent:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-05-15 10:25:09 DEBUG CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+2022-05-15 10:25:09 DEBUG PlatformDependent:205 - -Dio.netty.noPreferDirect: false
+2022-05-15 10:25:09 DEBUG PlatformDependent:967 - org.jctools-core.MpscChunkedArrayQueue: available
+2022-05-15 10:25:09 DEBUG InternalThreadLocalMap:86 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-05-15 10:25:09 DEBUG InternalThreadLocalMap:89 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-05-15 10:25:09 DEBUG JdkSslContext:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2022-05-15 10:25:09 DEBUG JdkSslContext:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-05-15 10:25:10 DEBUG MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 8
+2022-05-15 10:25:10 DEBUG NioEventLoop:109 - -Dio.netty.noKeySetOptimization: false
+2022-05-15 10:25:10 DEBUG NioEventLoop:110 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:157 - -Dio.netty.allocator.numHeapArenas: 8
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:158 - -Dio.netty.allocator.numDirectArenas: 8
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:160 - -Dio.netty.allocator.pageSize: 8192
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:165 - -Dio.netty.allocator.maxOrder: 9
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:169 - -Dio.netty.allocator.chunkSize: 4194304
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:170 - -Dio.netty.allocator.smallCacheSize: 256
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:171 - -Dio.netty.allocator.normalCacheSize: 64
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:172 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:173 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:174 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:175 - -Dio.netty.allocator.useCacheForAllThreads: false
+2022-05-15 10:25:10 DEBUG PooledByteBufAllocator:176 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-05-15 10:25:10 DEBUG ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+2022-05-15 10:25:10 DEBUG ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+2022-05-15 10:25:10 DEBUG ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-05-15 10:25:10 DEBUG DefaultChannelId:79 - -Dio.netty.processId: 10003 (auto-detected)
+2022-05-15 10:25:10 DEBUG NetUtil:136 - -Djava.net.preferIPv4Stack: false
+2022-05-15 10:25:10 DEBUG NetUtil:137 - -Djava.net.preferIPv6Addresses: false
+2022-05-15 10:25:10 DEBUG NetUtilInitializations:129 - Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+2022-05-15 10:25:10 DEBUG NetUtil:173 - /proc/sys/net/core/somaxconn: 4096
+2022-05-15 10:25:10 DEBUG DefaultChannelId:101 - -Dio.netty.machineId: 5c:c9:d3:ff:fe:43:b5:bf (auto-detected)
+2022-05-15 10:25:10 DEBUG AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+2022-05-15 10:25:10 DEBUG AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+2022-05-15 10:25:10 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4851cd4
+2022-05-15 10:25:10 DEBUG Recycler:85 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-05-15 10:25:10 DEBUG Recycler:86 - -Dio.netty.recycler.ratio: 8
+2022-05-15 10:25:10 DEBUG Recycler:87 - -Dio.netty.recycler.chunkSize: 32
+2022-05-15 10:25:10 DEBUG Recycler:88 - -Dio.netty.recycler.blocking: false
+2022-05-15 10:25:11 DEBUG Brotli:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+2022-05-15 10:25:11 DEBUG ThreadLocalRandom:214 - -Dio.netty.initialSeedUniquifier: 0xc151a963973452ea
+2022-05-15 10:25:12 DEBUG SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 10:25:13 DEBUG SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 10:26:30 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 10:26:31 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 10:27:54 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 10:29:41 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 10:30:19 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 11:33:56 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 11:34:35 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:34:35 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:36:45 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:36:46 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:37:07 INFO  SeleniumHelperElement:25 - find element by id with selector username
+2022-05-15 11:37:13 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:37:13 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:43:54 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:43:55 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:44:33 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 11:44:33 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:25:17 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:25:18 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:34:33 INFO  ReportExtension:22 - Started Selenium Helper tests
+2022-05-15 12:34:35 INFO  ReportExtension:27 - Start test test5()
+2022-05-15 12:34:37 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:34:37 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:34:38 INFO  ReportExtension:17 - test5() finished test
+2022-05-15 12:34:38 INFO  ReportExtension:12 - Selenium Helper finished tests
+2022-05-15 12:56:58 INFO  ReportExtension:38 - Started Selenium Helper tests
+2022-05-15 12:56:59 INFO  ReportExtension:27 - Selenium Helper finished tests
+2022-05-15 12:57:45 INFO  ReportExtension:38 - Started Selenium Helper tests
+2022-05-15 12:57:47 INFO  ReportExtension:44 - Start test test5()
+2022-05-15 12:57:49 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:57:50 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:57:50 INFO  ReportExtension:33 - test5() finished test
+2022-05-15 12:57:50 INFO  ReportExtension:27 - Selenium Helper finished tests
+2022-05-15 12:59:06 INFO  ReportExtension:38 - Started Selenium Helper tests
+2022-05-15 12:59:08 INFO  ReportExtension:44 - Start test test5()
+2022-05-15 12:59:09 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:59:10 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 12:59:11 INFO  ReportExtension:33 - test5() finished test
+2022-05-15 12:59:11 INFO  ReportExtension:27 - Selenium Helper finished tests
+2022-05-15 13:02:30 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:02:30 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:06:53 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:06:56 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:06:57 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:06:58 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:06:58 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:06:58 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:11:10 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:11:13 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:11:14 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:11:15 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:11:16 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:11:16 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:12:12 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:12:14 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:12:16 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:12:17 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:12:18 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:12:18 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:13:42 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:13:44 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:13:46 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:13:47 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:13:48 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:13:48 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:15:40 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:15:43 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:15:44 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:15:45 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:15:45 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:15:45 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:22:37 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:22:38 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:23:14 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:23:16 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:23:18 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:23:19 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:23:19 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:23:20 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:24:21 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:24:23 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:24:25 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:24:26 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:24:26 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:24:26 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:26:32 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:26:34 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:26:40 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:26:41 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:26:42 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:26:42 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:31:43 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:31:45 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:31:47 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:31:48 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:31:49 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:31:49 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:32:42 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:32:45 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:32:47 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:32:47 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:32:48 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:32:48 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:34:46 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:34:48 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:34:50 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:34:51 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:34:51 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:34:51 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:36:40 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:36:43 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:36:44 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:36:45 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:36:46 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:36:46 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:40:28 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:40:30 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:40:32 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:40:32 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:40:33 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:40:33 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:41:23 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:41:25 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:41:27 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:41:27 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:41:28 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:41:28 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 13:49:57 INFO  ReportExtension:39 - Started Selenium Helper tests
+2022-05-15 13:50:00 INFO  ReportExtension:45 - Start test test5()
+2022-05-15 13:50:01 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:50:02 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 13:50:03 INFO  ReportExtension:34 - test5() finished test
+2022-05-15 13:50:03 INFO  ReportExtension:28 - Selenium Helper finished tests
+2022-05-15 14:02:47 INFO  ReportExtension:42 - Started Selenium Helper tests
+2022-05-15 14:02:49 INFO  ReportExtension:48 - Start test test5()
+2022-05-15 14:02:51 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:02:52 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:02:53 INFO  ReportExtension:37 - test5() finished test
+2022-05-15 14:02:53 INFO  ReportExtension:29 - Selenium Helper finished tests
+2022-05-15 14:04:28 INFO  ReportExtension:42 - Started Selenium Helper tests
+2022-05-15 14:04:31 INFO  ReportExtension:48 - Start test test5()
+2022-05-15 14:04:32 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:04:33 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:04:33 INFO  ReportExtension:37 - test5() finished test
+2022-05-15 14:04:33 INFO  ReportExtension:29 - Selenium Helper finished tests
+2022-05-15 14:04:57 INFO  ReportExtension:42 - Started Selenium Helper tests
+2022-05-15 14:04:59 INFO  ReportExtension:48 - Start test test5()
+2022-05-15 14:05:02 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:05:02 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:05:03 INFO  ReportExtension:37 - test5() finished test
+2022-05-15 14:05:03 INFO  ReportExtension:29 - Selenium Helper finished tests
+2022-05-15 14:10:13 INFO  ReportExtension:42 - Started Selenium Helper tests
+2022-05-15 14:10:16 INFO  ReportExtension:48 - Start test test5()
+2022-05-15 14:10:18 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:10:18 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:10:19 INFO  ReportExtension:37 - test5() finished test
+2022-05-15 14:10:19 INFO  ReportExtension:29 - Selenium Helper finished tests
+2022-05-15 14:11:09 INFO  ReportExtension:42 - Started Selenium Helper tests
+2022-05-15 14:11:12 INFO  ReportExtension:48 - Start test test5()
+2022-05-15 14:11:13 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:11:14 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 14:11:14 INFO  ReportExtension:37 - test5() finished test
+2022-05-15 14:11:15 INFO  ReportExtension:29 - Selenium Helper finished tests
+2022-05-15 16:16:58 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:17:00 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:17:02 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 16:17:03 INFO  SeleniumHelperElement:25 - find element by id with selector docsearch-input
+2022-05-15 16:17:03 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:17:04 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:18:41 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:18:44 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:18:45 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 16:18:45 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:18:46 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:26:28 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:26:31 INFO  ReportExtension:58 - Start test test1()
+2022-05-15 16:26:32 INFO  ReportExtension:38 - test1() finished test
+2022-05-15 16:26:34 INFO  ReportExtension:58 - Start test test2()
+2022-05-15 16:26:36 INFO  ReportExtension:38 - test2() finished test
+2022-05-15 16:26:37 INFO  ReportExtension:58 - Start test test3()
+2022-05-15 16:26:39 INFO  SeleniumHelperElement:25 - find element by id with selector username
+2022-05-15 16:26:40 INFO  ReportExtension:38 - test3() finished test
+2022-05-15 16:26:41 INFO  ReportExtension:58 - Start test test4()
+2022-05-15 16:26:43 INFO  ReportExtension:38 - test4() finished test
+2022-05-15 16:26:44 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:26:46 ERROR SeleniumHelperElement:27 - Could not find element by id with selector docsearch-inputs
+2022-05-15 16:26:46 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:26:48 INFO  ReportExtension:58 - Start test test6()
+2022-05-15 16:26:57 INFO  ReportExtension:38 - test6() finished test
+2022-05-15 16:26:58 INFO  ReportExtension:58 - Start test test7()
+2022-05-15 16:27:06 INFO  ReportExtension:38 - test7() finished test
+2022-05-15 16:27:08 INFO  ReportExtension:58 - Start test test8()
+2022-05-15 16:27:18 INFO  ReportExtension:38 - test8() finished test
+2022-05-15 16:27:18 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:38:49 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:38:51 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:38:53 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 16:38:53 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:38:53 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:40:36 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:40:39 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:40:41 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 16:40:41 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:40:41 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:48:19 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:48:21 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 16:48:23 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 16:48:23 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 16:48:24 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 16:55:16 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 16:55:19 INFO  ReportExtension:58 - Start test test9Skipped()
+2022-05-15 16:55:21 INFO  ReportExtension:38 - test9Skipped() finished test
+2022-05-15 16:55:21 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 17:01:55 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 17:01:57 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 17:01:59 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 17:01:59 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 17:01:59 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 17:09:38 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 17:09:40 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 17:09:41 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 17:09:41 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 17:09:42 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 17:10:35 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 17:10:37 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 17:10:39 ERROR SeleniumHelperElement:30 - Could not find element by id with selector docsearch-inputs
+2022-05-15 17:10:39 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 17:10:39 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 17:19:21 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 17:19:23 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 17:19:25 ERROR SeleniumHelperElement:65 - Could not find element by id with selector docsearch-inputs
+2022-05-15 17:19:25 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 17:19:25 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 17:22:40 INFO  ReportExtension:52 - Started Selenium Helper tests
+2022-05-15 17:22:42 INFO  ReportExtension:58 - Start test test5()
+2022-05-15 17:22:44 INFO  SeleniumHelperElement:73 - Find element by id with selector docsearch-input
+2022-05-15 17:22:45 INFO  SeleniumHelperElement:73 - Find element by id with selector docsearch-input
+2022-05-15 17:22:45 INFO  ReportExtension:38 - test5() finished test
+2022-05-15 17:22:45 INFO  ReportExtension:30 - Selenium Helper finished tests

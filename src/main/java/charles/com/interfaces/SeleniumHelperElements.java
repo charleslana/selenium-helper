@@ -7,7 +7,17 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+/**
+ * Class get all page elements
+ *
+ * @author Charles Lana
+ * @version 1.0.0
+ */
 public interface SeleniumHelperElements {
+
+    default List<WebElement> findAll(By by) {
+        return getDriver().findElements(by);
+    }
 
     default List<WebElement> findAllByClassName(String className) {
         return getDriver().findElements(By.className(className));

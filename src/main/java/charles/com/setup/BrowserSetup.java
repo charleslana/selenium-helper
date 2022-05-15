@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class Browser {
+public class BrowserSetup {
 
     Boolean hasHeadless = Boolean.parseBoolean(PropertiesOperations.getPropertyValueByKey("headless"));
 

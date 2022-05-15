@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick, SeleniumHelperElement, SeleniumHelperElements, SeleniumHelperType, SeleniumHelperWait {
 
+    default WebDriver getDriver() {
+        return DriverFactory.getInstance().getDriver();
+    }
+
     default String getTitle() {
         return getDriver().getTitle();
     }
@@ -15,9 +19,5 @@ public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick
 
     default void navigate(String url) {
         getDriver().get(url);
-    }
-
-    private WebDriver getDriver() {
-        return DriverFactory.getInstance().getDriver();
     }
 }

@@ -1,8 +1,9 @@
 package testcase.example;
 
 import charles.com.interfaces.SeleniumHelper;
-import charles.com.setup.SeleniumHelperSetup;
+import charles.com.setup.SeleniumHelperTest;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import testcase.example.prime.PrimeAutocompleteHelper;
 import testcase.example.prime.PrimeCalendarHelper;
@@ -14,7 +15,7 @@ import testcase.example.utils.UrlUtils;
 
 import java.time.LocalDate;
 
-class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, SeleniumWaitComponent, TheInternetCheckboxComponent {
+class ExampleTest extends SeleniumHelperTest implements SeleniumHelper, SeleniumWaitComponent, TheInternetCheckboxComponent {
 
     @Test
     void test1() {
@@ -66,5 +67,11 @@ class ExampleTest extends SeleniumHelperSetup implements SeleniumHelper, Seleniu
         navigate(UrlUtils.URL_PRIMEFACES.concat("/primeng/calendar"));
         PrimeCalendarHelper prime = new PrimeCalendarHelper();
         prime.selectDatePopup(13, LocalDate.of(2000, 12, 31));
+    }
+
+    @Disabled
+    void test9Skipped() {
+        navigate(UrlUtils.URL_SELENIUM.concat("/support"));
+        Assertions.assertTrue(getDriver().getTitle().contains("Support"));
     }
 }

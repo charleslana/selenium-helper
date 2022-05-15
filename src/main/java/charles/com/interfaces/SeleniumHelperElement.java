@@ -1,11 +1,20 @@
 package charles.com.interfaces;
 
 import charles.com.factory.DriverFactory;
+import charles.com.factory.ExtentFactory;
+import com.aventstack.extentreports.Status;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public interface SeleniumHelperElement extends SeleniumHelperElements {
+
+    Logger logger = Logger.getLogger(SeleniumHelperElement.class);
+
+    default WebElement find(By by) {
+        return getDriver().findElement(by);
+    }
 
     default WebElement findByClassName(String className) {
         return getDriver().findElement(By.className(className));
@@ -16,7 +25,15 @@ public interface SeleniumHelperElement extends SeleniumHelperElements {
     }
 
     default WebElement findById(String id) {
-        return getDriver().findElement(By.id(id));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.id(id));
+            setLog("id", id);
+        } catch (Exception e) {
+            setLog("id", id, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByLinkText(String linkText) {
@@ -41,5 +58,19 @@ public interface SeleniumHelperElement extends SeleniumHelperElements {
 
     private WebDriver getDriver() {
         return DriverFactory.getInstance().getDriver();
+    }
+
+    private void setLog(String by, String selector) {
+        setLog(by, selector, false);
+    }
+
+    private void setLog(String by, String selector, Boolean isFail) {
+        if (Boolean.TRUE.equals(isFail)) {
+            logger.error(String.format("Could not find element by %s with selector %s", by, selector));
+            ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not find element by %s with selector %s", by, selector));
+            return;
+        }
+        logger.info(String.format("Find element by %s with selector %s", by, selector));
+        ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Find element by %s with selector %s", by, selector));
     }
 }

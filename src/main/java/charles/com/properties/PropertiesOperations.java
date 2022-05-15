@@ -25,7 +25,7 @@ public class PropertiesOperations {
     }
 
     private static String getSetupPropertyFile(String key) {
-        String propFilePath = System.getProperty("user.dir").concat("/src/main/resources/config.properties");
+        String propFilePath = System.getProperty("user.dir").concat("/src/test/resources/config.properties");
         try (FileInputStream fileInputStream = new FileInputStream(propFilePath)) {
             properties.load(fileInputStream);
         } catch (Exception e) {
