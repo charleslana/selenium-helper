@@ -298,3 +298,11 @@
 2022-05-15 17:22:45 INFO  SeleniumHelperElement:73 - Find element by id with selector docsearch-input
 2022-05-15 17:22:45 INFO  ReportExtension:38 - test5() finished test
 2022-05-15 17:22:45 INFO  ReportExtension:30 - Selenium Helper finished tests
+2022-05-15 18:08:15 INFO  SeleniumHelperElement:74 - Find element by id with selector docsearch-input
+2022-05-15 18:08:16 INFO  SeleniumHelperElement:74 - Find element by id with selector docsearch-input
+2022-05-15 18:11:01 INFO  ReportExtension:53 - Started Selenium Helper tests
+2022-05-15 18:11:04 INFO  ReportExtension:59 - Start test test5()
+2022-05-15 18:11:06 INFO  SeleniumHelperElement:74 - Find element by id with selector docsearch-input
+2022-05-15 18:11:07 INFO  SeleniumHelperElement:74 - Find element by id with selector docsearch-input
+2022-05-15 18:11:07 INFO  ReportExtension:39 - test5() finished test
+2022-05-15 18:11:07 INFO  ReportExtension:31 - Selenium Helper finished tests

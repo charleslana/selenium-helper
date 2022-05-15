@@ -3,14 +3,15 @@ package charles.com.interfaces;
 import charles.com.factory.DriverFactory;
 import charles.com.factory.ExtentFactory;
 import com.aventstack.extentreports.Status;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public interface SeleniumHelperElement extends SeleniumHelperElements {
 
-    Logger logger = Logger.getLogger(SeleniumHelperElement.class);
+    Logger logger = LoggerFactory.getLogger(SeleniumHelperElement.class);
 
     default WebElement find(By by) {
         return getDriver().findElement(by);
@@ -66,11 +67,11 @@ public interface SeleniumHelperElement extends SeleniumHelperElements {
 
     private void setLog(String by, String selector, Boolean isFail) {
         if (Boolean.TRUE.equals(isFail)) {
-            logger.error(String.format("Could not find element by %s with selector %s", by, selector));
+            logger.error("Could not find element by {} with selector {}", by, selector);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not find element by %s with selector %s", by, selector));
             return;
         }
-        logger.info(String.format("Find element by %s with selector %s", by, selector));
+        logger.info("Find element by {} with selector {}", by, selector);
         ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Find element by %s with selector %s", by, selector));
     }
 }

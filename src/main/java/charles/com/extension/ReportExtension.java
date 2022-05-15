@@ -7,10 +7,11 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
 import org.junit.jupiter.api.extension.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.io.File;
@@ -23,7 +24,7 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
     ExtentReports report;
     ExtentTest test;
 
-    Logger logger = Logger.getLogger(ReportExtension.class);
+    Logger logger = LoggerFactory.getLogger(ReportExtension.class);
 
     @Override
     public void afterAll(ExtensionContext extensionContext) throws Exception {
@@ -35,7 +36,7 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
 
     @Override
     public void afterTestExecution(ExtensionContext extensionContext) throws Exception {
-        logger.info(String.format("%s finished test", extensionContext.getDisplayName()));
+        logger.info("{} finished test", extensionContext.getDisplayName());
         if (extensionContext.getExecutionException().isEmpty()) {
             ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Test Case: %s is Passed", extensionContext.getDisplayName()));
         } else {
@@ -55,7 +56,7 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
 
     @Override
     public void beforeTestExecution(ExtensionContext extensionContext) throws Exception {
-        logger.info(String.format("Start test %s", extensionContext.getDisplayName()));
+        logger.info("Start test {}", extensionContext.getDisplayName());
         test = report.createTest(extensionContext.getDisplayName());
         ExtentFactory.getInstance().setExtent(test);
     }
