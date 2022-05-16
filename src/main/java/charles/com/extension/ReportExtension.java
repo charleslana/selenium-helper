@@ -2,6 +2,7 @@ package charles.com.extension;
 
 import charles.com.factory.DriverFactory;
 import charles.com.factory.ExtentFactory;
+import charles.com.properties.PropertiesOperations;
 import charles.com.setup.ReportSetup;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -63,10 +64,10 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
 
     private String getSetupScreenshot() {
         File file = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-        SimpleDateFormat format = new SimpleDateFormat("yyy-MM-dd HH-mm-ss");
+        SimpleDateFormat format = new SimpleDateFormat(PropertiesOperations.getPropertyValueByKey("report-datetime-format"));
         Date date = new Date();
         String actualDate = format.format(date);
-        String screenshotPath = System.getProperty("user.dir").concat(String.format("/src/test/resources/reports/screenshots/%s.jpeg", actualDate));
+        String screenshotPath = System.getProperty("user.dir").concat(String.format("/src/test/resources/reports/screenshots/Screenshot %s.jpeg", actualDate));
         File destination = new File(screenshotPath);
         try {
             FileUtils.copyFile(file, destination);

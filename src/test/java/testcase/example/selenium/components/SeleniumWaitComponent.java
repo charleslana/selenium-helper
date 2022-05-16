@@ -14,6 +14,7 @@ public interface SeleniumWaitComponent extends SeleniumHelper {
         typeById(SeleniumPage.SEARCH_FIELD_BY_ID, "Waits");
         waitInvisibilityByClassName(SeleniumPage.SEARCH_EMPTY_BY_CLASSNAME);
         typeById(SeleniumPage.SEARCH_FIELD_BY_ID, Keys.ENTER);
+        waitUrlContains("/documentation");
         Assertions.assertTrue(getTitle().contains("Waits"));
     }
 }

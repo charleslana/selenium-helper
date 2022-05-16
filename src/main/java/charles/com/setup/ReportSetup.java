@@ -18,7 +18,7 @@ public class ReportSetup {
     static ExtentReports extent;
 
     public static ExtentReports setupExtentReport() {
-        SimpleDateFormat format = new SimpleDateFormat("yyy-MM-dd HH-mm-ss");
+        SimpleDateFormat format = new SimpleDateFormat(PropertiesOperations.getPropertyValueByKey("report-datetime-format"));
         Date date = new Date();
         String actualDate = format.format(date);
         reportPath = System.getProperty("user.dir").concat(String.format("/src/test/resources/reports/Selenium Helper Report %s.html", actualDate));
@@ -40,8 +40,8 @@ public class ReportSetup {
         sparkReport.config().setDocumentTitle("Report Selenium Helper");
         sparkReport.config().setTheme(Theme.valueOf(PropertiesOperations.getPropertyValueByKey("report-theme").toUpperCase()));
         sparkReport.config().setReportName("Report Selenium Helper");
-        sparkReport.config().setTimeStampFormat("yyy-MM-dd HH:mm:ss");
+        sparkReport.config().setTimeStampFormat(PropertiesOperations.getPropertyValueByKey("report-datetime-format"));
         sparkReport.config().setProtocol(Protocol.HTTPS);
-        sparkReport.config().setCss(".logo { background-image: url('https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg') !important; background-size: contain; }");
+        sparkReport.config().setCss(String.format(".logo { background-image: url('%s') !important; background-size: contain; }", PropertiesOperations.getPropertyValueByKey("report-logo-url")));
     }
 }

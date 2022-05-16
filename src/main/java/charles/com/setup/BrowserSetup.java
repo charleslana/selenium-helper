@@ -1,7 +1,7 @@
 package charles.com.setup;
 
 import charles.com.properties.PropertiesOperations;
-import charles.com.utils.FunctionUtils;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,25 +23,25 @@ public class BrowserSetup {
     }
 
     private WebDriver setupChrome() {
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(hasHeadless);
         options.addArguments("--window-size=1920x1080");
-        System.setProperty("webdriver.chrome.driver", FunctionUtils.getResourcesWebDriverDir().concat("chromedriver"));
         return new ChromeDriver(options);
     }
 
     private WebDriver setupEdge() {
+        WebDriverManager.edgedriver().setup();
         EdgeOptions options = new EdgeOptions();
         options.setHeadless(hasHeadless);
         options.addArguments("--window-size=1920x1080");
-        System.setProperty("webdriver.edge.driver", FunctionUtils.getResourcesWebDriverDir().concat("msedgedriver"));
         return new EdgeDriver(options);
     }
 
     private WebDriver setupFirefox() {
+        WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(hasHeadless);
-        System.setProperty("webdriver.gecko.driver", FunctionUtils.getResourcesWebDriverDir().concat("geckodriver"));
         return new FirefoxDriver(options);
     }
 }

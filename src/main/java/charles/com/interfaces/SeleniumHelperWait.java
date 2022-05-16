@@ -75,6 +75,10 @@ public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperE
         await(ExpectedConditions.invisibilityOf(findAllByXpath(xpath).get(xpathIndex)));
     }
 
+    default void waitUrlContains(String path) {
+        await(ExpectedConditions.urlContains(path));
+    }
+
     default void waitVisibility(WebElement element) {
         await(ExpectedConditions.visibilityOf(element));
     }
