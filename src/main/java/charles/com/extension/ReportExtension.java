@@ -31,8 +31,10 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
     public void afterAll(ExtensionContext extensionContext) throws Exception {
         logger.info("Selenium Helper finished tests");
         report.flush();
-        File htmlFile = new File(ReportSetup.reportPath);
-        Desktop.getDesktop().browse(htmlFile.toURI());
+        if (Boolean.parseBoolean(PropertiesOperations.getPropertyValueByKey("open-report-after-tests"))) {
+            File htmlFile = new File(ReportSetup.reportPath);
+            Desktop.getDesktop().browse(htmlFile.toURI());
+        }
     }
 
     @Override
