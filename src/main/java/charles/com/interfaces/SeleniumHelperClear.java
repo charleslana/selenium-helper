@@ -1,64 +1,175 @@
 package charles.com.interfaces;
 
+import charles.com.factory.ExtentFactory;
+import com.aventstack.extentreports.Status;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public interface SeleniumHelperClear extends SeleniumHelperElement {
 
+    Logger logger = LoggerFactory.getLogger(SeleniumHelperClear.class);
+
     default void clearByClassName(String className) {
-        findByClassName(className).clear();
+        try {
+            findByClassName(className).clear();
+            setLog("className", className);
+        } catch (Exception e) {
+            setLog("className", className, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByClassName(String className, Integer classNameIndex) {
-        findAllByClassName(className).get(classNameIndex).clear();
+        try {
+            findAllByClassName(className).get(classNameIndex).clear();
+            setLog("className", className);
+        } catch (Exception e) {
+            setLog("className", className, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByCss(String css) {
-        findByCss(css).clear();
+        try {
+            findByCss(css).clear();
+            setLog("css", css);
+        } catch (Exception e) {
+            setLog("css", css, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByCss(String css, Integer cssIndex) {
-        findAllByCss(css).get(cssIndex).clear();
+        try {
+            findAllByCss(css).get(cssIndex).clear();
+            setLog("css", css);
+        } catch (Exception e) {
+            setLog("css", css, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearById(String id) {
-        findById(id).clear();
+        try {
+            findById(id).clear();
+            setLog("id", id);
+        } catch (Exception e) {
+            setLog("id", id, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByLinkText(String linkText) {
-        findByLinkText(linkText).clear();
+        try {
+            findByLinkText(linkText).clear();
+            setLog("linkText", linkText);
+        } catch (Exception e) {
+            setLog("linkText", linkText, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByLinkText(String linkText, Integer linkTextIndex) {
-        findAllByLinkText(linkText).get(linkTextIndex).clear();
+        try {
+            findAllByLinkText(linkText).get(linkTextIndex).clear();
+            setLog("linkText", linkText);
+        } catch (Exception e) {
+            setLog("linkText", linkText, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByName(String name) {
-        findByName(name).clear();
+        try {
+            findByName(name).clear();
+            setLog("name", name);
+        } catch (Exception e) {
+            setLog("name", name, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByName(String name, Integer nameIndex) {
-        findAllByName(name).get(nameIndex).clear();
+        try {
+            findAllByName(name).get(nameIndex).clear();
+            setLog("name", name);
+        } catch (Exception e) {
+            setLog("name", name, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByPartialLinkText(String partialLinkText) {
-        findByPartialLinkText(partialLinkText).clear();
+        try {
+            findByPartialLinkText(partialLinkText).clear();
+            setLog("partialLinkText", partialLinkText);
+        } catch (Exception e) {
+            setLog("partialLinkText", partialLinkText, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByPartialLinkText(String partialLinkText, Integer partialLinkTextIndex) {
-        findAllByPartialLinkText(partialLinkText).get(partialLinkTextIndex).clear();
+        try {
+            findAllByPartialLinkText(partialLinkText).get(partialLinkTextIndex).clear();
+            setLog("partialLinkText", partialLinkText);
+        } catch (Exception e) {
+            setLog("partialLinkText", partialLinkText, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByTagName(String tagName) {
-        findByTagName(tagName).clear();
+        try {
+            findByTagName(tagName).clear();
+            setLog("tagName", tagName);
+        } catch (Exception e) {
+            setLog("tagName", tagName, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByTagName(String tagName, Integer tagNameIndex) {
-        findAllByTagName(tagName).get(tagNameIndex).clear();
+        try {
+            findAllByTagName(tagName).get(tagNameIndex).clear();
+            setLog("tagName", tagName);
+        } catch (Exception e) {
+            setLog("tagName", tagName, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByXpath(String xpath) {
-        findByXpath(xpath).clear();
+        try {
+            findByXpath(xpath).clear();
+            setLog("xpath", xpath);
+        } catch (Exception e) {
+            setLog("xpath", xpath, true);
+            e.printStackTrace();
+        }
     }
 
     default void clearByXpath(String xpath, Integer xpathIndex) {
-        findAllByXpath(xpath).get(xpathIndex).clear();
+        try {
+            findAllByXpath(xpath).get(xpathIndex).clear();
+            setLog("xpath", xpath);
+        } catch (Exception e) {
+            setLog("xpath", xpath, true);
+            e.printStackTrace();
+        }
+    }
+
+    private void setLog(String by, String selector) {
+        setLog(by, selector, false);
+    }
+
+    private void setLog(String by, String selector, Boolean isFail) {
+        if (Boolean.TRUE.equals(isFail)) {
+            logger.error("Could not clear element by {} with selector {}", by, selector);
+            ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not clear element by %s with selector %s", by, selector));
+            return;
+        }
+        logger.info("Clear element by {} with selector {}", by, selector);
+        ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Clear element by %s with selector %s", by, selector));
     }
 }

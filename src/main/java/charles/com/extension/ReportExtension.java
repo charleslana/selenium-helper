@@ -36,13 +36,13 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
     }
 
     @Override
-    public void afterTestExecution(ExtensionContext extensionContext) throws Exception {
+    public void afterTestExecution(ExtensionContext extensionContext) {
         logger.info("{} finished test", extensionContext.getDisplayName());
         if (extensionContext.getExecutionException().isEmpty()) {
             ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Test Case: %s is Passed", extensionContext.getDisplayName()));
         } else {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Test Case: %s is Failed", extensionContext.getDisplayName()));
-            ExtentFactory.getInstance().getExtent().log(Status.FAIL, extensionContext.getExecutionException().get().getLocalizedMessage());
+            ExtentFactory.getInstance().getExtent().log(Status.FAIL, extensionContext.getExecutionException().orElseThrow());
             String screenshotPath = getSetupScreenshot();
             ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(screenshotPath, "Test case failure screenshot");
         }
@@ -50,13 +50,13 @@ public class ReportExtension implements BeforeAllCallback, BeforeTestExecutionCa
     }
 
     @Override
-    public void beforeAll(ExtensionContext extensionContext) throws Exception {
+    public void beforeAll(ExtensionContext extensionContext) {
         logger.info("Started Selenium Helper tests");
         report = ReportSetup.setupExtentReport();
     }
 
     @Override
-    public void beforeTestExecution(ExtensionContext extensionContext) throws Exception {
+    public void beforeTestExecution(ExtensionContext extensionContext) {
         logger.info("Start test {}", extensionContext.getDisplayName());
         test = report.createTest(extensionContext.getDisplayName());
         ExtentFactory.getInstance().setExtent(test);

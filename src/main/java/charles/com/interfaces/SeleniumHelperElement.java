@@ -14,15 +14,39 @@ public interface SeleniumHelperElement extends SeleniumHelperElements {
     Logger logger = LoggerFactory.getLogger(SeleniumHelperElement.class);
 
     default WebElement find(By by) {
-        return getDriver().findElement(by);
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(by);
+            setLog("by", by);
+        } catch (Exception e) {
+            setLog("by", by, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByClassName(String className) {
-        return getDriver().findElement(By.className(className));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.className(className));
+            setLog("className", className);
+        } catch (Exception e) {
+            setLog("className", className, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByCss(String css) {
-        return getDriver().findElement(By.cssSelector(css));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.cssSelector(css));
+            setLog("css", css);
+        } catch (Exception e) {
+            setLog("css", css, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findById(String id) {
@@ -38,34 +62,74 @@ public interface SeleniumHelperElement extends SeleniumHelperElements {
     }
 
     default WebElement findByLinkText(String linkText) {
-        return getDriver().findElement(By.linkText(linkText));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.linkText(linkText));
+            setLog("linkText", linkText);
+        } catch (Exception e) {
+            setLog("linkText", linkText, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByName(String name) {
-        return getDriver().findElement(By.name(name));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.name(name));
+            setLog("name", name);
+        } catch (Exception e) {
+            setLog("name", name, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByPartialLinkText(String partialLinkText) {
-        return getDriver().findElement(By.partialLinkText(partialLinkText));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.partialLinkText(partialLinkText));
+            setLog("partialLinkText", partialLinkText);
+        } catch (Exception e) {
+            setLog("partialLinkText", partialLinkText, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByTagName(String tagName) {
-        return getDriver().findElement(By.tagName(tagName));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.tagName(tagName));
+            setLog("tagName", tagName);
+        } catch (Exception e) {
+            setLog("tagName", tagName, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     default WebElement findByXpath(String xpath) {
-        return getDriver().findElement(By.xpath(xpath));
+        WebElement element = null;
+        try {
+            element = getDriver().findElement(By.xpath(xpath));
+            setLog("xpath", xpath);
+        } catch (Exception e) {
+            setLog("xpath", xpath, true);
+            e.printStackTrace();
+        }
+        return element;
     }
 
     private WebDriver getDriver() {
         return DriverFactory.getInstance().getDriver();
     }
 
-    private void setLog(String by, String selector) {
+    private void setLog(String by, Object selector) {
         setLog(by, selector, false);
     }
 
-    private void setLog(String by, String selector, Boolean isFail) {
+    private void setLog(String by, Object selector, Boolean isFail) {
         if (Boolean.TRUE.equals(isFail)) {
             logger.error("Could not find element by {} with selector {}", by, selector);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not find element by %s with selector %s", by, selector));

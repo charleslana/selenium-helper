@@ -1,7 +1,6 @@
 package testcase.example.prime;
 
 import charles.com.factory.DriverFactory;
-import charles.com.interfaces.SeleniumHelperClick;
 import charles.com.interfaces.SeleniumHelperWait;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class PrimeDropdownHelper implements SeleniumHelperClick, SeleniumHelperWait {
+public class PrimeDropdownHelper implements SeleniumHelperWait {
 
     public PrimeDropdownHelper() {
         PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
@@ -27,9 +26,9 @@ public class PrimeDropdownHelper implements SeleniumHelperClick, SeleniumHelperW
     }
 
     public void click(Integer dropdownIndex, Integer dropdownItemIndex) {
-        click(dropdowns, dropdownIndex);
+        dropdowns.get(dropdownIndex).click();
         waitVisibility(dropdownItemsWrapper);
-        click(dropdownItems, dropdownItemIndex);
+        dropdownItems.get(dropdownItemIndex).click();
         waitInvisibility(dropdownItemsWrapper);
     }
 }

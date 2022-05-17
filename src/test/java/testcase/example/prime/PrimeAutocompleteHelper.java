@@ -1,8 +1,6 @@
 package testcase.example.prime;
 
 import charles.com.factory.DriverFactory;
-import charles.com.interfaces.SeleniumHelperClick;
-import charles.com.interfaces.SeleniumHelperType;
 import charles.com.interfaces.SeleniumHelperWait;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class PrimeAutocompleteHelper implements SeleniumHelperClick, SeleniumHelperType, SeleniumHelperWait {
+public class PrimeAutocompleteHelper implements SeleniumHelperWait {
 
     public PrimeAutocompleteHelper() {
         PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
@@ -28,9 +26,9 @@ public class PrimeAutocompleteHelper implements SeleniumHelperClick, SeleniumHel
     }
 
     public void type(Integer autoCompleteIndex, String textToType) {
-        type(autoCompleteInputs.get(autoCompleteIndex), textToType);
+        autoCompleteInputs.get(autoCompleteIndex).sendKeys(textToType);
         waitVisibility(autoCompletePanel);
-        click(autoCompleteItems, 0);
+        autoCompleteItems.get(0).click();
         waitInvisibility(autoCompletePanel);
     }
 }

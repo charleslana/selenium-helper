@@ -1,7 +1,6 @@
 package testcase.example.prime;
 
 import charles.com.factory.DriverFactory;
-import charles.com.interfaces.SeleniumHelperClick;
 import charles.com.interfaces.SeleniumHelperWait;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.LocalDate;
 import java.util.List;
 
-public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperWait {
+public class PrimeCalendarHelper implements SeleniumHelperWait {
 
     public PrimeCalendarHelper() {
         PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
@@ -42,7 +41,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     }
 
     public void selectDatePopup(Integer calendarIndex, LocalDate date) {
-        click(calendars.get(calendarIndex));
+        calendars.get(calendarIndex).click();
         waitVisibility(datepickerCalendars.get(0));
         selectYearPicker(date);
         selectMonthPicker(date);
@@ -53,9 +52,9 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     private void searchYear(LocalDate date, boolean isSearch) {
         if (isSearch) {
             if (date.getYear() < LocalDate.now().getYear()) {
-                click(datepickerPrev, 0);
+                datepickerPrev.get(0).click();
             } else {
-                click(datepickerNext, 0);
+                datepickerNext.get(0).click();
             }
         }
     }
@@ -63,7 +62,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     private void selectDayPicker(LocalDate date) {
         for (WebElement day : datepickerDays) {
             if (day.getText().equals(String.valueOf(date.getDayOfMonth()))) {
-                click(day);
+                day.click();
                 break;
             }
         }
@@ -73,7 +72,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
         waitVisibility(monthPicker);
         for (WebElement month : monthPickerMonths) {
             if (month.getText().equalsIgnoreCase(date.getMonth().toString().substring(0, 3))) {
-                click(month);
+                month.click();
                 break;
             }
         }
@@ -83,7 +82,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     private boolean selectYear(LocalDate date) {
         for (WebElement year : yearPickerYears) {
             if (year.getText().equals(String.valueOf(date.getYear()))) {
-                click(year);
+                year.click();
                 return false;
             }
         }
@@ -91,7 +90,7 @@ public class PrimeCalendarHelper implements SeleniumHelperClick, SeleniumHelperW
     }
 
     private void selectYearPicker(LocalDate date) {
-        click(datepickerYears, 0);
+        datepickerYears.get(0).click();
         waitVisibility(yearPicker);
         boolean isSearch = true;
         while (isSearch) {
