@@ -120,7 +120,7 @@ Por favor, siga o [`CODE_OF_CONDUCT.md`](https://github.com/probot/template/blob
 
 ## 🎥 Demonstração
 
-Acesse o vídeo da demonstração e uso [aqui]()
+Acesse o vídeo da demonstração e uso [Youtube]()
 
 ## 📄 Licença
 
