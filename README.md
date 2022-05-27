@@ -57,7 +57,7 @@ Agora basta executar o teste que compõe a anotação @Test
 
 ## 🔧 Configuração inicial
 
-Após a instalação navegue até o arquivo que está na pasta resources com o nome: config.properties.
+Após a instalação navegue até o arquivo que está na pasta resources do ambiente teste com o nome: config.properties.
 
 Este arquivo possui configurações de entrada para qual critério deseja acionar
 
