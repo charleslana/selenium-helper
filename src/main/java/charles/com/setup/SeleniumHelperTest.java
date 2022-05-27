@@ -3,11 +3,9 @@ package charles.com.setup;
 import charles.com.extension.ReportExtension;
 import charles.com.factory.DriverFactory;
 import charles.com.properties.PropertiesOperations;
-import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runners.MethodSorters;
 
 /**
  * Class to start the initial test settings
@@ -16,7 +14,6 @@ import org.junit.runners.MethodSorters;
  * @version 1.0.0
  */
 @ExtendWith(ReportExtension.class)
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SeleniumHelperTest {
 
     @BeforeEach

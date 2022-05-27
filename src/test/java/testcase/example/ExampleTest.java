@@ -77,7 +77,7 @@ class ExampleTest extends SeleniumHelperTest implements SeleniumHelper, Selenium
     }
 
     @Test
-    void test10Error() {
+    void test9() {
         navigate(UrlUtils.URL_SELENIUM.concat("/error"));
         clickByLinkText(SeleniumPage.ACTION_CREATE_ISSUE_BY_LINK_TEXT);
         Assertions.assertEquals(getUrl(), UrlUtils.URL_SELENIUM.concat("/documentation/"));
