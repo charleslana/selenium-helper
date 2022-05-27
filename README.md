@@ -61,7 +61,7 @@ Após a instalação navegue até o arquivo que está na pasta resources do ambi
 
 Este arquivo possui configurações de entrada para qual critério deseja acionar
 
-| parâmetro               | valores                 | padrão                                                                                                   |
+| Parâmetro               | Valores                 | Padrão                                                                                                   |
 |-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
 | browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
 | headless                | (true or false)         | false                                                                                                    |
@@ -98,7 +98,110 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 
 ## 🔑 API SeleniumHelper
 
-tabela com listagem
+| Método                            | Parâmetros                    | Retorno          |
+|-----------------------------------|-------------------------------|------------------|
+| getDriver                         |                               | WebDriver        |
+| getTitle                          |                               | String           |
+| getUrl                            |                               | String           |
+| navigate                          | String                        | String           |
+| await                             | Function                      | void             |
+| clearByClassName                  | String                        | void             |
+| clearByClassName                  | String, Integer               | void             |
+| clearByCss                        | String                        | void             |
+| clearByCss                        | String, Integer               | void             |
+| clearById                         | String                        | void             |
+| clearByLinkText                   | String                        | void             |
+| clearByLinkText                   | String, Integer               | void             |
+| clearByName                       | String                        | void             |
+| clearByName                       | String, Integer               | void             |
+| clearByPartialLinkText            | String                        | void             |
+| clearByPartialLinkText            | String, Integer               | void             |
+| clearByTagName                    | String                        | void             |
+| clearByTagName                    | String, Integer               | void             |
+| clearByXpath                      | String                        | void             |
+| clearByXpath                      | String, Integer               | void             |
+| clickByClassName                  | String                        | void             |
+| clickByClassName                  | String, Integer               | void             |
+| clickByCss                        | String                        | void             |
+| clickByCss                        | String, Integer               | void             |
+| clickById                         | String                        | void             |
+| clickByLinkText                   | String                        | void             |
+| clickByLinkText                   | String, Integer               | void             |
+| clickByName                       | String                        | void             |
+| clickByName                       | String, Integer               | void             |
+| clickByPartialLinkText            | String                        | void             |
+| clickByPartialLinkText            | String, Integer               | void             |
+| clickByTagName                    | String                        | void             |
+| clickByTagName                    | String, Integer               | void             |
+| clickByXpath                      | String                        | void             |
+| clickByXpath                      | String, Integer               | void             |
+| find                              | By                            | WebElement       |
+| findByClassName                   | String                        | WebElement       |
+| findByCss                         | String                        | WebElement       |
+| findById                          | String                        | WebElement       |
+| findByLinkText                    | String                        | WebElement       |
+| findByName                        | String                        | WebElement       |
+| findByPartialLinkText             | String                        | WebElement       |
+| findByTagName                     | String                        | WebElement       |
+| findByXpath                       | String                        | WebElement       |
+| findAll                           | By                            | List<WebElement> |
+| findAllByClassName                | String                        | List<WebElement> |
+| findAllByCss                      | String                        | List<WebElement> |
+| findAllByLinkText                 | String                        | List<WebElement> |
+| findAllByName                     | String                        | List<WebElement> |
+| findAllByPartialLinkText          | String                        | List<WebElement> |
+| findAllByTagName                  | String                        | List<WebElement> |
+| findAllByXpath                    | String                        | List<WebElement> |
+| typeByClassName                   | String, CharSequence          | void             |
+| typeByClassName                   | String, Integer, CharSequence | void             |
+| typeByCss                         | String, CharSequence          | void             |
+| typeByCss                         | String, Integer, CharSequence | void             |
+| typeById                          | String, CharSequence          | void             |
+| typeByLinkText                    | String, CharSequence          | void             |
+| typeByLinkText                    | String, Integer, CharSequence | void             |
+| typeByName                        | String, CharSequence          | void             |
+| typeByName                        | String, Integer, CharSequence | void             |
+| typeByPartialLinkText             | String, CharSequence          | void             |
+| typeByPartialLinkText             | String, Integer, CharSequence | void             |
+| typeByTagName                     | String, CharSequence          | void             |
+| typeByTagName                     | String, Integer, CharSequence | void             |
+| typeByXpath                       | String, CharSequence          | void             |
+| typeByXpath                       | String, Integer, CharSequence | void             |
+| waitInvisibility                  | WebElement                    | void             |
+| waitInvisibility                  | List<WebElement>, Integer     | void             |
+| waitInvisibilityByClassName       | String                        | void             |
+| waitInvisibilityByClassName       | String, Integer               | void             |
+| waitInvisibilityByCss             | String                        | void             |
+| waitInvisibilityByCss             | String, Integer               | void             |
+| waitInvisibilityById              | String                        | void             |
+| waitInvisibilityByLinkText        | String                        | void             |
+| waitInvisibilityByLinkText        | String, Integer               | void             |
+| waitInvisibilityByName            | String                        | void             |
+| waitInvisibilityByName            | String, Integer               | void             |
+| waitInvisibilityByPartialLinkText | String                        | void             |
+| waitInvisibilityByPartialLinkText | String, Integer               | void             |
+| waitInvisibilityByTagName         | String                        | void             |
+| waitInvisibilityByTagName         | String, Integer               | void             |
+| waitInvisibilityByXpath           | String                        | void             |
+| waitInvisibilityByXpath           | String, Integer               | void             |
+| waitUrlContains                   | String                        | void             |
+| waitVisibility                    | WebElement                    | void             |
+| waitVisibility                    | List<WebElement>, Integer     | void             |
+| waitVisibilityByClassName         | String                        | void             |
+| waitVisibilityByClassName         | String, Integer               | void             |
+| waitVisibilityByCss               | String                        | void             |
+| waitVisibilityByCss               | String, Integer               | void             |
+| waitVisibilityById                | String                        | void             |
+| waitVisibilityByLinkText          | String                        | void             |
+| waitVisibilityByLinkText          | String, Integer               | void             |
+| waitVisibilityByName              | String                        | void             |
+| waitVisibilityByName              | String, Integer               | void             |
+| waitVisibilityByPartialLinkText   | String                        | void             |
+| waitVisibilityByPartialLinkText   | String, Integer               | void             |
+| waitVisibilityByTagName           | String                        | void             |
+| waitVisibilityByTagName           | String, Integer               | void             |
+| waitVisibilityByXpath             | String                        | void             |
+| waitVisibilityByXpath             | String, Integer               | void             |
 
 ## 💻 Suporte
 
@@ -114,9 +217,9 @@ Uma vez que o projeto é livre para uso conforme na licença, você pode contrib
 
 Contribuições são sempre bem-vindas!
 
-Veja [`CONTRIBUTING.md`](https://github.com/github/docs/blob/main/CONTRIBUTING.md) para saber como começar.
+Veja [`CONTRIBUTING.md`](CONTRIBUTING.md) para saber como começar.
 
-Por favor, siga o [`CODE_OF_CONDUCT.md`](https://github.com/probot/template/blob/master/CODE_OF_CONDUCT.md) desse projeto.
+Por favor, siga o [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) desse projeto.
 
 ## 🎥 Demonstração
 
@@ -124,7 +227,7 @@ Acesse o vídeo da demonstração e uso [Youtube]()
 
 ## 📄 Licença
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://github.com/pagarme/opensource/blob/master/templates/LICENSE.md)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](LICENSE.md)
 
 ## 📢 Autor
 
