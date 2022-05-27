@@ -89,7 +89,7 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 ```java
     class MyTest extends SeleniumHelperTest implements SeleniumHelper {
         @Test
-        void test10Error() {
+        void myTest() {
             navigate("https://www.selenium.dev/documentation");
             clickByLinkText("Create documentation issue");
             Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
