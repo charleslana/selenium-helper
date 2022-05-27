@@ -88,6 +88,7 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 
 ```java
     class MyTest extends SeleniumHelperTest implements SeleniumHelper {
+    
         @Test
         void myTest() {
             navigate("https://www.selenium.dev/documentation");
