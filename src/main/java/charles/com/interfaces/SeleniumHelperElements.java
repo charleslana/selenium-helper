@@ -21,6 +21,12 @@ public interface SeleniumHelperElements {
 
     Logger logger = LoggerFactory.getLogger(SeleniumHelperElements.class);
 
+    /**
+     * Method that fetches all page element by
+     *
+     * @param by by from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAll(By by) {
         List<WebElement> elements = null;
         try {
@@ -33,6 +39,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element class name from page
+     *
+     * @param className class name from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByClassName(String className) {
         List<WebElement> elements = null;
         try {
@@ -45,6 +57,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element css from page
+     *
+     * @param css css from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByCss(String css) {
         List<WebElement> elements = null;
         try {
@@ -57,6 +75,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element link text from page
+     *
+     * @param linkText link text from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByLinkText(String linkText) {
         List<WebElement> elements = null;
         try {
@@ -69,6 +93,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element name from page
+     *
+     * @param name name from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByName(String name) {
         List<WebElement> elements = null;
         try {
@@ -81,6 +111,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element partial link text from page
+     *
+     * @param partialLinkText link text partial from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByPartialLinkText(String partialLinkText) {
         List<WebElement> elements = null;
         try {
@@ -94,7 +130,7 @@ public interface SeleniumHelperElements {
     }
 
     /**
-     * Method that fetches all page element name tags
+     * Method that fetches all element tag name from page
      *
      * @param tagName tag name from element
      * @return List of WebElement
@@ -111,6 +147,12 @@ public interface SeleniumHelperElements {
         return elements;
     }
 
+    /**
+     * Method that fetches all element xpath from page
+     *
+     * @param xpath xpath from element
+     * @return List of WebElement
+     */
     default List<WebElement> findAllByXpath(String xpath) {
         List<WebElement> elements = null;
         try {

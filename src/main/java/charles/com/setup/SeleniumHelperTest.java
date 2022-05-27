@@ -9,6 +9,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runners.MethodSorters;
 
+/**
+ * Class to start the initial test settings
+ *
+ * @author Charles Lana
+ * @version 1.0.0
+ */
 @ExtendWith(ReportExtension.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SeleniumHelperTest {

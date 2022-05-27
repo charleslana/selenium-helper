@@ -6,10 +6,21 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Type-in-element functionality class
+ *
+ * @author Charles Lana
+ * @version 1.0.0
+ */
 public interface SeleniumHelperType extends SeleniumHelperElement {
 
     Logger logger = LoggerFactory.getLogger(SeleniumHelperType.class);
 
+    /**
+     * Method that type on element by class name
+     *
+     * @param className class name element
+     */
     default void typeByClassName(String className, CharSequence textToType) {
         try {
             sendKeys(findByClassName(className), textToType);
@@ -20,6 +31,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by class name with index
+     *
+     * @param className      class name element
+     * @param classNameIndex class name index
+     */
     default void typeByClassName(String className, Integer classNameIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByClassName(className).get(classNameIndex), textToType);
@@ -30,6 +47,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by css
+     *
+     * @param css css element
+     */
     default void typeByCss(String css, CharSequence textToType) {
         try {
             sendKeys(findByCss(css), textToType);
@@ -40,6 +62,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by css with index
+     *
+     * @param css      css element
+     * @param cssIndex css index
+     */
     default void typeByCss(String css, Integer cssIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByCss(css).get(cssIndex), textToType);
@@ -50,6 +78,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by id
+     *
+     * @param id id element
+     */
     default void typeById(String id, CharSequence textToType) {
         try {
             sendKeys(findById(id), textToType);
@@ -60,6 +93,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by link text
+     *
+     * @param linkText link text element
+     */
     default void typeByLinkText(String linkText, CharSequence textToType) {
         try {
             sendKeys(findByLinkText(linkText), textToType);
@@ -70,6 +108,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by link text with index
+     *
+     * @param linkText      link text element
+     * @param linkTextIndex link text index
+     */
     default void typeByLinkText(String linkText, Integer linkTextIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByLinkText(linkText).get(linkTextIndex), textToType);
@@ -80,6 +124,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by name
+     *
+     * @param name name element
+     */
     default void typeByName(String name, CharSequence textToType) {
         try {
             sendKeys(findByName(name), textToType);
@@ -90,6 +139,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by name with index
+     *
+     * @param name      name element
+     * @param nameIndex name index
+     */
     default void typeByName(String name, Integer nameIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByName(name).get(nameIndex), textToType);
@@ -100,6 +155,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by partial link text
+     *
+     * @param partialLinkText link text partial element
+     */
     default void typeByPartialLinkText(String partialLinkText, CharSequence textToType) {
         try {
             sendKeys(findByPartialLinkText(partialLinkText), textToType);
@@ -110,6 +170,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by link text partial with index
+     *
+     * @param partialLinkText      link text partial element
+     * @param partialLinkTextIndex link text partial index
+     */
     default void typeByPartialLinkText(String partialLinkText, Integer partialLinkTextIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByPartialLinkText(partialLinkText).get(partialLinkTextIndex), textToType);
@@ -120,6 +186,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by tag name
+     *
+     * @param tagName tag name element
+     */
     default void typeByTagName(String tagName, CharSequence textToType) {
         try {
             sendKeys(findByTagName(tagName), textToType);
@@ -130,6 +201,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by tag name with index
+     *
+     * @param tagName      tag name element
+     * @param tagNameIndex tag name index
+     */
     default void typeByTagName(String tagName, Integer tagNameIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByTagName(tagName).get(tagNameIndex), textToType);
@@ -140,6 +217,11 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by xpath
+     *
+     * @param xpath xpath element
+     */
     default void typeByXpath(String xpath, CharSequence textToType) {
         try {
             sendKeys(findByXpath(xpath), textToType);
@@ -150,6 +232,12 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that type on element by xpath with index
+     *
+     * @param xpath      xpath element
+     * @param xpathIndex xpath index
+     */
     default void typeByXpath(String xpath, Integer xpathIndex, CharSequence textToType) {
         try {
             sendKeys(findAllByXpath(xpath).get(xpathIndex), textToType);

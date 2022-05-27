@@ -5,10 +5,21 @@ import com.aventstack.extentreports.Status;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Clear fields functionality class
+ *
+ * @author Charles Lana
+ * @version 1.0.0
+ */
 public interface SeleniumHelperClear extends SeleniumHelperElement {
 
     Logger logger = LoggerFactory.getLogger(SeleniumHelperClear.class);
 
+    /**
+     * Method that clears field by class name
+     *
+     * @param className class name field
+     */
     default void clearByClassName(String className) {
         try {
             findByClassName(className).clear();
@@ -19,6 +30,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by class name with index
+     *
+     * @param className      class name field
+     * @param classNameIndex class name index
+     */
     default void clearByClassName(String className, Integer classNameIndex) {
         try {
             findAllByClassName(className).get(classNameIndex).clear();
@@ -29,6 +46,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by css
+     *
+     * @param css css field
+     */
     default void clearByCss(String css) {
         try {
             findByCss(css).clear();
@@ -39,6 +61,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by css with index
+     *
+     * @param css      css field
+     * @param cssIndex css index
+     */
     default void clearByCss(String css, Integer cssIndex) {
         try {
             findAllByCss(css).get(cssIndex).clear();
@@ -49,6 +77,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by id
+     *
+     * @param id css field
+     */
     default void clearById(String id) {
         try {
             findById(id).clear();
@@ -59,6 +92,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by link text
+     *
+     * @param linkText link text field
+     */
     default void clearByLinkText(String linkText) {
         try {
             findByLinkText(linkText).clear();
@@ -69,6 +107,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by link text with index
+     *
+     * @param linkText      link text field
+     * @param linkTextIndex link text index
+     */
     default void clearByLinkText(String linkText, Integer linkTextIndex) {
         try {
             findAllByLinkText(linkText).get(linkTextIndex).clear();
@@ -79,6 +123,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by name
+     *
+     * @param name name field
+     */
     default void clearByName(String name) {
         try {
             findByName(name).clear();
@@ -89,6 +138,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by name with index
+     *
+     * @param name      name field
+     * @param nameIndex name index
+     */
     default void clearByName(String name, Integer nameIndex) {
         try {
             findAllByName(name).get(nameIndex).clear();
@@ -99,6 +154,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by partial link text
+     *
+     * @param partialLinkText link text partial field
+     */
     default void clearByPartialLinkText(String partialLinkText) {
         try {
             findByPartialLinkText(partialLinkText).clear();
@@ -109,6 +169,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by partial link text with index
+     *
+     * @param partialLinkText      link text partial field
+     * @param partialLinkTextIndex link text partial index
+     */
     default void clearByPartialLinkText(String partialLinkText, Integer partialLinkTextIndex) {
         try {
             findAllByPartialLinkText(partialLinkText).get(partialLinkTextIndex).clear();
@@ -119,6 +185,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by tag name
+     *
+     * @param tagName tag name field
+     */
     default void clearByTagName(String tagName) {
         try {
             findByTagName(tagName).clear();
@@ -129,6 +200,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by tag name with index
+     *
+     * @param tagName      tag name field
+     * @param tagNameIndex tag name index
+     */
     default void clearByTagName(String tagName, Integer tagNameIndex) {
         try {
             findAllByTagName(tagName).get(tagNameIndex).clear();
@@ -139,6 +216,11 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by xpath
+     *
+     * @param xpath xpath field
+     */
     default void clearByXpath(String xpath) {
         try {
             findByXpath(xpath).clear();
@@ -149,6 +231,12 @@ public interface SeleniumHelperClear extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clears field by xpath with index
+     *
+     * @param xpath      xpath field
+     * @param xpathIndex xpath index
+     */
     default void clearByXpath(String xpath, Integer xpathIndex) {
         try {
             findAllByXpath(xpath).get(xpathIndex).clear();

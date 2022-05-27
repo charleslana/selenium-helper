@@ -9,6 +9,7 @@ import testcase.example.prime.PrimeAutocompleteHelper;
 import testcase.example.prime.PrimeCalendarHelper;
 import testcase.example.prime.PrimeDropdownHelper;
 import testcase.example.selenium.components.SeleniumWaitComponent;
+import testcase.example.selenium.pageobjects.SeleniumPage;
 import testcase.example.theinternet.components.TheInternetCheckboxComponent;
 import testcase.example.theinternet.pageobjects.TheInternetPage;
 import testcase.example.utils.UrlUtils;
@@ -73,5 +74,12 @@ class ExampleTest extends SeleniumHelperTest implements SeleniumHelper, Selenium
     void test9Skipped() {
         navigate(UrlUtils.URL_SELENIUM.concat("/support"));
         Assertions.assertTrue(getDriver().getTitle().contains("Support"));
+    }
+
+    @Test
+    void test10Error() {
+        navigate(UrlUtils.URL_SELENIUM.concat("/error"));
+        clickByLinkText(SeleniumPage.ACTION_CREATE_ISSUE_BY_LINK_TEXT);
+        Assertions.assertEquals(getUrl(), UrlUtils.URL_SELENIUM.concat("/documentation/"));
     }
 }

@@ -5,10 +5,21 @@ import com.aventstack.extentreports.Status;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Element click functionality class
+ *
+ * @author Charles Lana
+ * @version 1.0.0
+ */
 public interface SeleniumHelperClick extends SeleniumHelperElement {
 
     Logger logger = LoggerFactory.getLogger(SeleniumHelperClick.class);
 
+    /**
+     * Method that clicks on element by class name
+     *
+     * @param className class name element
+     */
     default void clickByClassName(String className) {
         try {
             findByClassName(className).click();
@@ -19,6 +30,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by class name with index
+     *
+     * @param className      class name element
+     * @param classNameIndex class name index
+     */
     default void clickByClassName(String className, Integer classNameIndex) {
         try {
             findAllByClassName(className).get(classNameIndex).click();
@@ -29,6 +46,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by css
+     *
+     * @param css css element
+     */
     default void clickByCss(String css) {
         try {
             findByCss(css).click();
@@ -39,6 +61,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by css with index
+     *
+     * @param css      css element
+     * @param cssIndex css index
+     */
     default void clickByCss(String css, Integer cssIndex) {
         try {
             findAllByCss(css).get(cssIndex).click();
@@ -49,6 +77,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by id
+     *
+     * @param id id element
+     */
     default void clickById(String id) {
         try {
             findById(id).click();
@@ -59,6 +92,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by link text
+     *
+     * @param linkText link text element
+     */
     default void clickByLinkText(String linkText) {
         try {
             findByLinkText(linkText).click();
@@ -69,6 +107,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by link text with index
+     *
+     * @param linkText      link text element
+     * @param linkTextIndex link text index
+     */
     default void clickByLinkText(String linkText, Integer linkTextIndex) {
         try {
             findAllByLinkText(linkText).get(linkTextIndex).click();
@@ -79,6 +123,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by name
+     *
+     * @param name name element
+     */
     default void clickByName(String name) {
         try {
             findByName(name).click();
@@ -89,6 +138,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by name with index
+     *
+     * @param name      name element
+     * @param nameIndex name index
+     */
     default void clickByName(String name, Integer nameIndex) {
         try {
             findAllByName(name).get(nameIndex).click();
@@ -99,6 +154,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by partial link text
+     *
+     * @param partialLinkText link text partial element
+     */
     default void clickByPartialLinkText(String partialLinkText) {
         try {
             findByPartialLinkText(partialLinkText).click();
@@ -109,6 +169,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by link text partial with index
+     *
+     * @param partialLinkText      link text partial element
+     * @param partialLinkTextIndex link text partial index
+     */
     default void clickByPartialLinkText(String partialLinkText, Integer partialLinkTextIndex) {
         try {
             findAllByPartialLinkText(partialLinkText).get(partialLinkTextIndex).click();
@@ -119,6 +185,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by tag name
+     *
+     * @param tagName tag name element
+     */
     default void clickByTagName(String tagName) {
         try {
             findByTagName(tagName).click();
@@ -129,6 +200,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by tag name with index
+     *
+     * @param tagName      tag name element
+     * @param tagNameIndex tag name index
+     */
     default void clickByTagName(String tagName, Integer tagNameIndex) {
         try {
             findAllByTagName(tagName).get(tagNameIndex).click();
@@ -139,6 +216,11 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by xpath
+     *
+     * @param xpath xpath element
+     */
     default void clickByXpath(String xpath) {
         try {
             findByXpath(xpath).click();
@@ -149,6 +231,12 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
         }
     }
 
+    /**
+     * Method that clicks on element by xpath with index
+     *
+     * @param xpath      xpath element
+     * @param xpathIndex xpath index
+     */
     default void clickByXpath(String xpath, Integer xpathIndex) {
         try {
             findAllByXpath(xpath).get(xpathIndex).click();
