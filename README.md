@@ -33,9 +33,7 @@ Selenium Helper possui integração com as seguintes tecnologias:
 
 O Projeto possui duas divisões de ambiente de listas, uma contendo o core que é o main e a outra contendo a pasta de test.
 
-Pasta de relatórios e screenshots
-
-Dentro da pasta test em resources
+Pasta de relatórios e screenshots dentro da pasta test em resources
 
 ### 🚫 O que não posso alterar para uso de produção?
 
