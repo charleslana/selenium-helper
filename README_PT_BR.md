@@ -156,14 +156,14 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 | findByPartialLinkText             | String                        | WebElement       |
 | findByTagName                     | String                        | WebElement       |
 | findByXpath                       | String                        | WebElement       |
-| findAll                           | By                            | List<WebElement> |
-| findAllByClassName                | String                        | List<WebElement> |
-| findAllByCss                      | String                        | List<WebElement> |
-| findAllByLinkText                 | String                        | List<WebElement> |
-| findAllByName                     | String                        | List<WebElement> |
-| findAllByPartialLinkText          | String                        | List<WebElement> |
-| findAllByTagName                  | String                        | List<WebElement> |
-| findAllByXpath                    | String                        | List<WebElement> |
+| findAll                           | By                            | List[WebElement] |
+| findAllByClassName                | String                        | List[WebElement] |
+| findAllByCss                      | String                        | List[WebElement] |
+| findAllByLinkText                 | String                        | List[WebElement] |
+| findAllByName                     | String                        | List[WebElement] |
+| findAllByPartialLinkText          | String                        | List[WebElement] |
+| findAllByTagName                  | String                        | List[WebElement] |
+| findAllByXpath                    | String                        | List[WebElement] |
 | typeByClassName                   | String, CharSequence          | void             |
 | typeByClassName                   | String, Integer, CharSequence | void             |
 | typeByCss                         | String, CharSequence          | void             |
