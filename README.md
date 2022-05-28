@@ -1,24 +1,24 @@
-# Selenium Helper 🆘 Documentação
+# Selenium Helper 🆘 Documentation
 
-## 💡 Introdução
+## 💡 Introduction
 
-> *Está documentação se encontra em 🇺🇸 Inglês, no entanto está disponível a documentação em português do 🇧🇷 Brasil clicando [aqui](README_PT_BR.md)*
+> *This documentation is in 🇺🇸 English, however the Portuguese documentation from 🇧🇷 Brazil is available by clicking [here](README_EN_BR.md)*
 
-**Selenium Helper** é uma ferramenta de teste baseada no framework de testes selenium open source e escrita em java.
+**Selenium Helper** is a testing tool based on the open source selenium testing framework and written in java.
 
-A ideia foi unificar ferramentas de testes em apenas um conjunto de bibliotecas para a execução de testes automatizados 🤖 e contendo uma modelagem de criação de testes mais ampla.
+The idea was to unify testing tools in just one set of libraries for running automated tests 🤖 and containing a broader test creation model.
 
-Sabemos que o selenium puro não contém relatórios ou logs de informações para informar ao usuário, dessa forma foi criado um sistema que lida com a entrega dessas informações, além disso é um framework personalizado para que o programador que usar para criar os seus testes automatizados não tenha tanto trabalho, entretanto poderá usar nativamente funções do selenium.
+We know that pure selenium does not contain reports or logs of information to inform the user, so a system was created that deals with the delivery of this information, in addition it is a customized framework so that the programmer who uses it to create his automated tests does not take so much work, however you can use selenium functions natively.
 
-Em contato com a ferramenta você poderá ver em tempo real os logs de informações para cada ação de teste e no final deles você terá a opção de verificar o relatório com seus respectivos acertos e erros.
+By contacting the tool, you will be able to see in real time the information logs for each test action and at the end of them you will have the option to check the report with their respective successes and errors.
 
-Selenium helper além de basear no selenium, ele contém várias outras bibliotecas que lhe darão agilidade e suporte nos testes, algumas delas são:
+Selenium helper in addition to being based on selenium, it contains several other libraries that will give you agility and support in tests, some of them are:
 
 _Selenium, WebDriver Manager, Extent Reports, JUnit._
 
-## 📚 Especificações detalhadas
+## 📚 Detailed specifications
 
-Selenium Helper possui integração com as seguintes tecnologias:
+Selenium Helper has integration with the following technologies:
 
 - Java 18
 - Selenium 4
@@ -29,76 +29,76 @@ Selenium Helper possui integração com as seguintes tecnologias:
 - Lombok
 - Apache Commons
 
-## 🏘 Arquitetura
+## 🏘 Architecture
 
-O Projeto possui duas divisões de ambiente de listas, uma contendo o core que é o main e a outra contendo a pasta de test.
+The Project has two divisions of list environment, one containing the core which is the main and the other containing the test folder.
 
-Pasta de relatórios e screenshots dentro da pasta test em resources
+Reports and screenshots folder inside the test folder under resources
 
-### 🚫 O que não posso alterar para uso de produção?
+### 🚫 What can't I change for production use?
 
-O projeto contém duas pastas sendo o test e o main, a main e todo seu conteúdo não pode ser excluído, mas pode ser alterado para que possa ajustar as suas necessidades.
+The project contains two folders, test and main, main and all its contents cannot be deleted, but can be changed to suit your needs.
 
-### ✅ O que posso alterar? 
+### ✅ What can I change?
 
-Na pasta test existem vários exemplos de algumas formas de como implementar testes em conjunto com variações, mas você pode excluir eles sem problemas, ***⚠ lembrando que não deve excluir a pasta resources da pasta test.***
+In the test folder there are several examples of some ways of implementing tests together with variations, but you can delete them without problems, ***⚠ remembering that you should not delete the resources' folder from the test folder.***
 
-## 💾 Instalação
+## 💾 Installation
 
-É necessário uma IDE que faça compilação do Java, IntelliJ, Netbeans, Eclipse.
+Is an IDE that compiles Java, IntelliJ, Netbeans, Eclipse is required.
 
-Basta clonar o projeto ou baixar o projeto para o seu ambiente.
+Just clone the project or download the project to your environment.
 
-Após baixar e extrair o arquivo para uma pasta desejada, abra o projeto em sua IDE e baixe as dependências de bibliotecas.
+After downloading and extracting the file to a desired folder, open the project in your IDE and download the library dependencies.
 
-Você navegará na pasta do projeto para o arquivo ExampleTest.java que está dentro da pasta test.
+You will navigate in the project folder to the ExampleTest.java file that is inside the test folder.
 
-Agora basta executar o teste que compõe a anotação @Test
+Now just run the test that makes up the @Test
 
-## 🔧 Configuração inicial
+## annotation 🔧 Initial setup
 
-Após a instalação navegue até o arquivo que está na pasta resources do ambiente teste com o nome: config.properties.
+After installation, navigate to the file that is in the resources' folder of the test environment with the name: config.properties.
 
-Este arquivo possui configurações de entrada para qual critério deseja acionar
+This file has input settings for which criteria you want to trigger
 
-| Parâmetro               | Valores                 | Padrão                                                                                                   |
-|-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
-| browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
-| headless                | (true or false)         | false                                                                                                    |
-| web-driver-wait         | número inteiro          | 10                                                                                                       |
-| report-theme            | (standard, dark)        | dark                                                                                                     |
-| report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
-| report-datetime-format  | formato de datatime     | yyyy-MM-dd HH-mm-ss                                                                                      |
-| open-report-after-tests | (true or false)         | true                                                                                                     |
+| Parameter | Values ​​| Pattern |
+|-------------------------|----------------------- ---|---------------------------------------------- -------------------------------------------------- ---------|
+| browser | (chrome, firefox, edge) | chrome |
+| headless | (true or false) | false |
+| web-driver-wait | integer | 10 |
+| report-theme | (standard, dark) | dark |
+| report-logo-url | url string | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
+| report-datetime-format | datetime format | yyyy-MM-dd HH-mm-ss |
+| open-report-after-tests | (true or false) | true |
 
-## 🐛 Os Testes
+## 🐛 The Tests
 
-Com  a ajuda do Junit que vem no projeto você pode criar vários casos de testes,
-É importante saber que após criar um classe de teste é necessário que faça a extensão da classe SeleniumHelperTest e implementação da classe SeleniumHelper
+With the help of Junit that comes in the project you can create several test cases,
+It is important to know that after creating a test class it is necessary to extend the SeleniumHelperTest class and implement the SeleniumHelper class
 
-`SeleniumHelperTest` - Classe para iniciar as configurações iniciais de teste
+`SeleniumHelperTest` - Class to start initial test settings
 
-`SeleniumHelper` - Classe responsável pelos controles de elemento de página
+`SeleniumHelper` - Class responsible for page element controls
 
-Os exemplos listados podem servir como uma padrão de seus testes pois se baseia em componentes com interfaces separadas.
+The examples listed can serve as a pattern for your tests as it is based on components with separate interfaces.
 
-### 📝 Como criar meus testes?
+### 📝 How to create my tests?
 
-```java
-    class MyTest extends SeleniumHelperTest implements SeleniumHelper {
+```java 
+    class MyTest extends SeleniumHelperTest implements SeleniumHelper { 
     
-        @Test
-        void myTest() {
-            navigate("https://www.selenium.dev/documentation");
-            clickByLinkText("Create documentation issue");
-            Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
-        }
-    }
-```
+        @Test 
+        void myTest() { 
+            navigate("https://www.selenium.dev/documentation"); 
+            clickByLinkText("Create documentation issue"); 
+            Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/"); 
+        } 
+    } 
+``` 
 
-## 🔑 API SeleniumHelper
+## 🔑 SeleniumHelper API
 
-| Método                            | Parâmetros                    | Retorno          |
+| Method | Parameters | Return |
 |-----------------------------------|-------------------------------|------------------|
 | getDriver                         |                               | WebDriver        |
 | getTitle                          |                               | String           |
@@ -203,34 +203,32 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 | waitVisibilityByXpath             | String                        | void             |
 | waitVisibilityByXpath             | String, Integer               | void             |
 
-## 💻 Suporte
+## 💻 Support
 
-Selenium Helper utiliza a biblioteca WebDriver Manager que auxilia na instalação automática de drivers de navegadores. Dessa forma o suporte aos navegadores será o mesmo que o selenium dá suporte.
+Selenium Helper uses the WebDriver Manager library that helps in the automatic installation of browser drivers. That way browser support will be the same as what selenium supports.
 
-### 📌 Qual sistema operacional suporta?
+### 📌 Which operating system does it support?
 
-Foi testado em apenas Linux, você pode testar para verificar se funciona em outros OS.
+It has been tested on Linux only, you can test to see if it works on other OS.
 
-## 💪 Contribuição
+## 💪 Contribution
 
-Uma vez que o projeto é livre para uso conforme na licença, você pode contribuir com novas ideias e melhorias, fique livre para opinar, criar um pull request ou abrir uma issue.
+Since the project is free to use as per the license, you can contribute new ideas and improvements, feel free to comment, create a pull request or open an issue.
 
-Contribuições são sempre bem-vindas!
+Contributions are always welcome!
 
-Veja [`CONTRIBUTING.md`](CONTRIBUTING.md) para saber como começar.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to get started.
 
-Por favor, siga o [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) desse projeto.
+Please follow the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) of this project.
 
-## 🎥 Demonstração
+## 🎥 Demo
 
-Acesse o vídeo da demonstração e uso [Youtube]()
+Access the demo video and use [YouTube]()
 
-## 📄 Licença
+## 📄 License
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](LICENSE.md)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](LICENSE.md )
 
-## 📢 Autor
+## 📢 Author
 
 - [@charleslana](https://www.github.com/charleslana)
-
-
