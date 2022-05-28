@@ -63,9 +63,9 @@ dependencies.
 
 You will navigate in the project folder to the ExampleTest.java file that is inside the test folder.
 
-Now just run the test that makes up the @Test
+Now just run the test that makes up the annotation @Test
 
-## annotation 🔧 Initial setup
+## 🔧 Initial setup
 
 After installation, navigate to the file that is in the resources' folder of the test environment with the name:
 config.properties.
