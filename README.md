@@ -2,7 +2,7 @@
 
 ## 💡 Introduction
 
-> *This documentation is in 🇺🇸 English, however the Portuguese documentation from 🇧🇷 Brazil is available by clicking [here](README_EN_BR.md)*
+> *This documentation is in 🇺🇸 English, however the Portuguese documentation from 🇧🇷 Brazil is available by clicking [here](README_PT_BR.md)*
 
 **Selenium Helper** is a testing tool based on the open source selenium testing framework and written in java.
 
