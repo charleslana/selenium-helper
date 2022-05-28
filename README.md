@@ -2,17 +2,23 @@
 
 ## 💡 Introduction
 
-> *This documentation is in 🇺🇸 English, however the Portuguese documentation from 🇧🇷 Brazil is available by clicking [here](README_PT_BR.md)*
+> *This documentation is in 🇺🇸 English, however the Portuguese documentation from 🇧🇷 Brazil is available by
+clicking [here](README_PT_BR.md)*
 
 **Selenium Helper** is a testing tool based on the open source selenium testing framework and written in java.
 
-The idea was to unify testing tools in just one set of libraries for running automated tests 🤖 and containing a broader test creation model.
+The idea was to unify testing tools in just one set of libraries for running automated tests 🤖 and containing a broader
+test creation model.
 
-We know that pure selenium does not contain reports or logs of information to inform the user, so a system was created that deals with the delivery of this information, in addition it is a customized framework so that the programmer who uses it to create his automated tests does not take so much work, however you can use selenium functions natively.
+We know that pure selenium does not contain reports or logs of information to inform the user, so a system was created
+that deals with the delivery of this information, in addition it is a customized framework so that the programmer who
+uses it to create his automated tests does not take so much work, however you can use selenium functions natively.
 
-By contacting the tool, you will be able to see in real time the information logs for each test action and at the end of them you will have the option to check the report with their respective successes and errors.
+By contacting the tool, you will be able to see in real time the information logs for each test action and at the end of
+them you will have the option to check the report with their respective successes and errors.
 
-Selenium helper in addition to being based on selenium, it contains several other libraries that will give you agility and support in tests, some of them are:
+Selenium helper in addition to being based on selenium, it contains several other libraries that will give you agility
+and support in tests, some of them are:
 
 _Selenium, WebDriver Manager, Extent Reports, JUnit._
 
@@ -31,17 +37,20 @@ Selenium Helper has integration with the following technologies:
 
 ## 🏘 Architecture
 
-The Project has two divisions of list environment, one containing the core which is the main and the other containing the test folder.
+The Project has two divisions of list environment, one containing the core which is the main and the other containing
+the test folder.
 
 Reports and screenshots folder inside the test folder under resources
 
 ### 🚫 What can't I change for production use?
 
-The project contains two folders, test and main, main and all its contents cannot be deleted, but can be changed to suit your needs.
+The project contains two folders, test and main, main and all its contents cannot be deleted, but can be changed to suit
+your needs.
 
 ### ✅ What can I change?
 
-In the test folder there are several examples of some ways of implementing tests together with variations, but you can delete them without problems, ***⚠ remembering that you should not delete the resources' folder from the test folder.***
+In the test folder there are several examples of some ways of implementing tests together with variations, but you can
+delete them without problems, ***⚠ remembering that you should not delete the resources' folder from the test folder.***
 
 ## 💾 Installation
 
@@ -49,7 +58,8 @@ Is an IDE that compiles Java, IntelliJ, Netbeans, Eclipse is required.
 
 Just clone the project or download the project to your environment.
 
-After downloading and extracting the file to a desired folder, open the project in your IDE and download the library dependencies.
+After downloading and extracting the file to a desired folder, open the project in your IDE and download the library
+dependencies.
 
 You will navigate in the project folder to the ExampleTest.java file that is inside the test folder.
 
@@ -57,24 +67,26 @@ Now just run the test that makes up the @Test
 
 ## annotation 🔧 Initial setup
 
-After installation, navigate to the file that is in the resources' folder of the test environment with the name: config.properties.
+After installation, navigate to the file that is in the resources' folder of the test environment with the name:
+config.properties.
 
 This file has input settings for which criteria you want to trigger
 
-| Parameter | Values ​​| Pattern |
-|-------------------------|----------------------- ---|---------------------------------------------- -------------------------------------------------- ---------|
-| browser | (chrome, firefox, edge) | chrome |
-| headless | (true or false) | false |
-| web-driver-wait | integer | 10 |
-| report-theme | (standard, dark) | dark |
-| report-logo-url | url string | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
-| report-datetime-format | datetime format | yyyy-MM-dd HH-mm-ss |
-| open-report-after-tests | (true or false) | true |
+| Parameter               | Values                  | Default                                                                                                  |
+|-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
+| browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
+| headless                | (true or false)         | false                                                                                                    |
+| web-driver-wait         | número inteiro          | 10                                                                                                       |
+| report-theme            | (standard, dark)        | dark                                                                                                     |
+| report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
+| report-datetime-format  | formato de datatime     | yyyy-MM-dd HH-mm-ss                                                                                      |
+| open-report-after-tests | (true or false)         | true                                                                                                     |
 
 ## 🐛 The Tests
 
 With the help of Junit that comes in the project you can create several test cases,
-It is important to know that after creating a test class it is necessary to extend the SeleniumHelperTest class and implement the SeleniumHelper class
+It is important to know that after creating a test class it is necessary to extend the SeleniumHelperTest class and
+implement the SeleniumHelper class
 
 `SeleniumHelperTest` - Class to start initial test settings
 
@@ -98,7 +110,7 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 
 ## 🔑 SeleniumHelper API
 
-| Method | Parameters | Return |
+| Method                            | Parameters                    | Return           |
 |-----------------------------------|-------------------------------|------------------|
 | getDriver                         |                               | WebDriver        |
 | getTitle                          |                               | String           |
@@ -205,7 +217,8 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 
 ## 💻 Support
 
-Selenium Helper uses the WebDriver Manager library that helps in the automatic installation of browser drivers. That way browser support will be the same as what selenium supports.
+Selenium Helper uses the WebDriver Manager library that helps in the automatic installation of browser drivers. That way
+browser support will be the same as what selenium supports.
 
 ### 📌 Which operating system does it support?
 
@@ -213,7 +226,8 @@ It has been tested on Linux only, you can test to see if it works on other OS.
 
 ## 💪 Contribution
 
-Since the project is free to use as per the license, you can contribute new ideas and improvements, feel free to comment, create a pull request or open an issue.
+Since the project is free to use as per the license, you can contribute new ideas and improvements, feel free to
+comment, create a pull request or open an issue.
 
 Contributions are always welcome!
 

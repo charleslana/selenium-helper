@@ -2,17 +2,24 @@
 
 ## 💡 Introdução
 
-> *Está documentação se encontra em 🇺🇸 Inglês, no entanto está disponível a documentação em português do 🇧🇷 Brasil clicando [aqui](README_PT_BR.md)*
+> *Está documentação se encontra em 🇺🇸 Inglês, no entanto está disponível a documentação em português do 🇧🇷 Brasil
+clicando [aqui](README_PT_BR.md)*
 
 **Selenium Helper** é uma ferramenta de teste baseada no framework de testes selenium open source e escrita em java.
 
-A ideia foi unificar ferramentas de testes em apenas um conjunto de bibliotecas para a execução de testes automatizados 🤖 e contendo uma modelagem de criação de testes mais ampla.
+A ideia foi unificar ferramentas de testes em apenas um conjunto de bibliotecas para a execução de testes automatizados
+🤖 e contendo uma modelagem de criação de testes mais ampla.
 
-Sabemos que o selenium puro não contém relatórios ou logs de informações para informar ao usuário, dessa forma foi criado um sistema que lida com a entrega dessas informações, além disso é um framework personalizado para que o programador que usar para criar os seus testes automatizados não tenha tanto trabalho, entretanto poderá usar nativamente funções do selenium.
+Sabemos que o selenium puro não contém relatórios ou logs de informações para informar ao usuário, dessa forma foi
+criado um sistema que lida com a entrega dessas informações, além disso é um framework personalizado para que o
+programador que usar para criar os seus testes automatizados não tenha tanto trabalho, entretanto poderá usar
+nativamente funções do selenium.
 
-Em contato com a ferramenta você poderá ver em tempo real os logs de informações para cada ação de teste e no final deles você terá a opção de verificar o relatório com seus respectivos acertos e erros.
+Em contato com a ferramenta você poderá ver em tempo real os logs de informações para cada ação de teste e no final
+deles você terá a opção de verificar o relatório com seus respectivos acertos e erros.
 
-Selenium helper além de basear no selenium, ele contém várias outras bibliotecas que lhe darão agilidade e suporte nos testes, algumas delas são:
+Selenium helper além de basear no selenium, ele contém várias outras bibliotecas que lhe darão agilidade e suporte nos
+testes, algumas delas são:
 
 _Selenium, WebDriver Manager, Extent Reports, JUnit._
 
@@ -31,17 +38,20 @@ Selenium Helper possui integração com as seguintes tecnologias:
 
 ## 🏘 Arquitetura
 
-O Projeto possui duas divisões de ambiente de listas, uma contendo o core que é o main e a outra contendo a pasta de test.
+O Projeto possui duas divisões de ambiente de listas, uma contendo o core que é o main e a outra contendo a pasta de
+test.
 
 Pasta de relatórios e screenshots dentro da pasta test em resources
 
 ### 🚫 O que não posso alterar para uso de produção?
 
-O projeto contém duas pastas sendo o test e o main, a main e todo seu conteúdo não pode ser excluído, mas pode ser alterado para que possa ajustar as suas necessidades.
+O projeto contém duas pastas sendo o test e o main, a main e todo seu conteúdo não pode ser excluído, mas pode ser
+alterado para que possa ajustar as suas necessidades.
 
-### ✅ O que posso alterar? 
+### ✅ O que posso alterar?
 
-Na pasta test existem vários exemplos de algumas formas de como implementar testes em conjunto com variações, mas você pode excluir eles sem problemas, ***⚠ lembrando que não deve excluir a pasta resources da pasta test.***
+Na pasta test existem vários exemplos de algumas formas de como implementar testes em conjunto com variações, mas você
+pode excluir eles sem problemas, ***⚠ lembrando que não deve excluir a pasta resources da pasta test.***
 
 ## 💾 Instalação
 
@@ -49,7 +59,8 @@ Na pasta test existem vários exemplos de algumas formas de como implementar tes
 
 Basta clonar o projeto ou baixar o projeto para o seu ambiente.
 
-Após baixar e extrair o arquivo para uma pasta desejada, abra o projeto em sua IDE e baixe as dependências de bibliotecas.
+Após baixar e extrair o arquivo para uma pasta desejada, abra o projeto em sua IDE e baixe as dependências de
+bibliotecas.
 
 Você navegará na pasta do projeto para o arquivo ExampleTest.java que está dentro da pasta test.
 
@@ -73,8 +84,9 @@ Este arquivo possui configurações de entrada para qual critério deseja aciona
 
 ## 🐛 Os Testes
 
-Com  a ajuda do Junit que vem no projeto você pode criar vários casos de testes,
-É importante saber que após criar um classe de teste é necessário que faça a extensão da classe SeleniumHelperTest e implementação da classe SeleniumHelper
+Com a ajuda do Junit que vem no projeto você pode criar vários casos de testes,
+É importante saber que após criar um classe de teste é necessário que faça a extensão da classe SeleniumHelperTest e
+implementação da classe SeleniumHelper
 
 `SeleniumHelperTest` - Classe para iniciar as configurações iniciais de teste
 
@@ -86,14 +98,14 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 
 ```java
     class MyTest extends SeleniumHelperTest implements SeleniumHelper {
-    
-        @Test
-        void myTest() {
-            navigate("https://www.selenium.dev/documentation");
-            clickByLinkText("Create documentation issue");
-            Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
-        }
+
+    @Test
+    void myTest() {
+        navigate("https://www.selenium.dev/documentation");
+        clickByLinkText("Create documentation issue");
+        Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
     }
+}
 ```
 
 ## 🔑 API SeleniumHelper
@@ -205,7 +217,8 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 
 ## 💻 Suporte
 
-Selenium Helper utiliza a biblioteca WebDriver Manager que auxilia na instalação automática de drivers de navegadores. Dessa forma o suporte aos navegadores será o mesmo que o selenium dá suporte.
+Selenium Helper utiliza a biblioteca WebDriver Manager que auxilia na instalação automática de drivers de navegadores.
+Dessa forma o suporte aos navegadores será o mesmo que o selenium dá suporte.
 
 ### 📌 Qual sistema operacional suporta?
 
@@ -213,7 +226,8 @@ Foi testado em apenas Linux, você pode testar para verificar se funciona em out
 
 ## 💪 Contribuição
 
-Uma vez que o projeto é livre para uso conforme na licença, você pode contribuir com novas ideias e melhorias, fique livre para opinar, criar um pull request ou abrir uma issue.
+Uma vez que o projeto é livre para uso conforme na licença, você pode contribuir com novas ideias e melhorias, fique
+livre para opinar, criar um pull request ou abrir uma issue.
 
 Contribuições são sempre bem-vindas!
 
