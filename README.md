@@ -96,17 +96,17 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 
 ### 📝 How to create my tests?
 
-```java 
-    class MyTest extends SeleniumHelperTest implements SeleniumHelper { 
-    
-        @Test 
-        void myTest() { 
-            navigate("https://www.selenium.dev/documentation"); 
-            clickByLinkText("Create documentation issue"); 
-            Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/"); 
-        } 
-    } 
-``` 
+```java
+    class MyTest extends SeleniumHelperTest implements SeleniumHelper {
+
+    @Test
+    void myTest() {
+        navigate("https://www.selenium.dev/documentation");
+        clickByLinkText("Create documentation issue");
+        Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
+    }
+}
+```
 
 ## 🔑 SeleniumHelper API
 
