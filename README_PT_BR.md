@@ -75,12 +75,12 @@ Este arquivo possui configurações de entrada para qual critério deseja aciona
 | Parâmetro               | Valores                 | Padrão                                                                                                   |
 |-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
 | browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
-| headless                | (true or false)         | false                                                                                                    |
+| headless                | (true ou false)         | false                                                                                                    |
 | web-driver-wait         | número inteiro          | 10                                                                                                       |
 | report-theme            | (standard, dark)        | dark                                                                                                     |
 | report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
 | report-datetime-format  | formato de datatime     | yyyy-MM-dd HH-mm-ss                                                                                      |
-| open-report-after-tests | (true or false)         | true                                                                                                     |
+| open-report-after-tests | (true ou false)         | true                                                                                                     |
 
 ## 🐛 Os Testes
 

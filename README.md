@@ -76,10 +76,10 @@ This file has input settings for which criteria you want to trigger
 |-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
 | browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
 | headless                | (true or false)         | false                                                                                                    |
-| web-driver-wait         | número inteiro          | 10                                                                                                       |
+| web-driver-wait         | number integer          | 10                                                                                                       |
 | report-theme            | (standard, dark)        | dark                                                                                                     |
 | report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
-| report-datetime-format  | formato de datatime     | yyyy-MM-dd HH-mm-ss                                                                                      |
+| report-datetime-format  | datetime format         | yyyy-MM-dd HH-mm-ss                                                                                      |
 | open-report-after-tests | (true or false)         | true                                                                                                     |
 
 ## 🐛 The Tests
