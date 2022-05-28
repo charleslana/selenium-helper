@@ -237,7 +237,7 @@ Please follow the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) of this project.
 
 ## 🎥 Demo
 
-Access the demo video and use [YouTube]()
+Access the demo video and use [YouTube](https://youtu.be/4_xqpoCL5L4)
 
 ## 📄 License
 

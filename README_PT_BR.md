@@ -237,7 +237,7 @@ Por favor, siga o [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) desse projeto.
 
 ## 🎥 Demonstração
 
-Acesse o vídeo da demonstração e uso [YouTube]()
+Acesse o vídeo da demonstração e uso [YouTube](https://youtu.be/4_xqpoCL5L4)
 
 ## 📄 Licença
 
