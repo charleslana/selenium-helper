@@ -214,6 +214,7 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 | waitVisibilityByTagName           | String, Integer               | void             |
 | waitVisibilityByXpath             | String                        | void             |
 | waitVisibilityByXpath             | String, Integer               | void             |
+| goToNewWindow                     |                               | void             |
 
 ## 💻 Support
 

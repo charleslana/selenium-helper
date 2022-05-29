@@ -5,6 +5,7 @@ import charles.com.setup.SeleniumHelperTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import testcase.example.prime.PrimeAutocompleteHelper;
 import testcase.example.prime.PrimeCalendarHelper;
 import testcase.example.prime.PrimeDropdownHelper;
@@ -81,5 +82,14 @@ class ExampleTest extends SeleniumHelperTest implements SeleniumHelper, Selenium
         navigate(UrlUtils.URL_SELENIUM.concat("/error"));
         clickByLinkText(SeleniumPage.ACTION_CREATE_ISSUE_BY_LINK_TEXT);
         Assertions.assertEquals(getUrl(), UrlUtils.URL_SELENIUM.concat("/documentation/"));
+    }
+
+    @Test
+    void testNewWindow() {
+        navigate(UrlUtils.URL_SELENIUM.concat("/documentation/webdriver/browser/windows"));
+        clickByLinkText(SeleniumPage.ACTION_NEW_WINDOW_BY_LINK_TEXT);
+        await(ExpectedConditions.numberOfWindowsToBe(2));
+        goToNewWindow();
+        Assertions.assertEquals("Selenium", getTitle());
     }
 }

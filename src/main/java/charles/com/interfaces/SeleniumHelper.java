@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
  * @author Charles Lana
  * @version 1.0.0
  */
-public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick, SeleniumHelperElement, SeleniumHelperElements, SeleniumHelperType, SeleniumHelperWait {
+public interface SeleniumHelper extends SeleniumHelperClear, SeleniumHelperClick, SeleniumHelperElement, SeleniumHelperElements, SeleniumHelperType, SeleniumHelperWait, SeleniumHelperWindow {
 
     Logger logger = LoggerFactory.getLogger(SeleniumHelper.class);
 
