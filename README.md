@@ -115,7 +115,7 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 | getDriver                         |                               | WebDriver        |
 | getTitle                          |                               | String           |
 | getUrl                            |                               | String           |
-| navigate                          | String                        | String           |
+| navigate                          |                               | String           |
 | await                             | Function                      | void             |
 | clearByClassName                  | String                        | void             |
 | clearByClassName                  | String, Integer               | void             |
