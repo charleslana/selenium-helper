@@ -89,7 +89,18 @@ class ExampleTest extends SeleniumHelperTest implements SeleniumHelper, Selenium
         navigate(UrlUtils.URL_SELENIUM.concat("/documentation/webdriver/browser/windows"));
         clickByLinkText(SeleniumPage.ACTION_NEW_WINDOW_BY_LINK_TEXT);
         await(ExpectedConditions.numberOfWindowsToBe(2));
-        goToNewWindow();
+        switchWindow();
         Assertions.assertEquals("Selenium", getTitle());
+    }
+
+    @Test
+    void testDefaultWindow() {
+        navigate(UrlUtils.URL_SELENIUM.concat("/documentation/webdriver/browser/windows"));
+        clickByLinkText(SeleniumPage.ACTION_NEW_WINDOW_BY_LINK_TEXT);
+        await(ExpectedConditions.numberOfWindowsToBe(2));
+        switchWindow();
+        Assertions.assertEquals("Selenium", getTitle());
+        switchWindow();
+        Assertions.assertEquals("Working with windows and tabs | Selenium", getTitle());
     }
 }

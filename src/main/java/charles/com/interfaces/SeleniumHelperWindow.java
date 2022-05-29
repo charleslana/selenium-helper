@@ -3,7 +3,7 @@ package charles.com.interfaces;
 import charles.com.factory.DriverFactory;
 
 /**
- * Class for window functionality
+ * Class for windows functionality
  *
  * @author Charles Lana
  * @version 1.0.0
@@ -11,12 +11,12 @@ import charles.com.factory.DriverFactory;
 public interface SeleniumHelperWindow {
 
     /**
-     * Method going to new open window
+     * Method to switch window
      */
-    default void goToNewWindow() {
-        String originalWindow = DriverFactory.getInstance().getDriver().getWindowHandle();
+    default void switchWindow() {
+        String currentWindow = DriverFactory.getInstance().getDriver().getWindowHandle();
         for (String windowHandle : DriverFactory.getInstance().getDriver().getWindowHandles()) {
-            if (!originalWindow.contentEquals(windowHandle)) {
+            if (!currentWindow.contentEquals(windowHandle)) {
                 DriverFactory.getInstance().getDriver().switchTo().window(windowHandle);
                 break;
             }
