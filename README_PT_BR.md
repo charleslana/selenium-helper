@@ -248,7 +248,7 @@ Utilize o parâmetro name para definir um nome ou deixei em branco para salvar o
 | switchWindow                      |                               | void             |
 | alertAccept                       |                               | void             |
 | alertDismiss                      |                               | void             |
-| getAlert                          |                               | getAlert         |
+| getAlert                          |                               | Alert            |
 | getAlertText                      |                               | String           |
 | typeAlert                         | String                        | void             |
 | dragDrop                          | WebElement, WebElement        | void             |

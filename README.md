@@ -249,7 +249,7 @@ Use the name parameter to define a name or leave it blank to save the video with
 | switchWindow                      |                               | void             |
 | alertAccept                       |                               | void             |
 | alertDismiss                      |                               | void             |
-| getAlert                          |                               | getAlert         |
+| getAlert                          |                               | Alert            |
 | getAlertText                      |                               | String           |
 | typeAlert                         | String                        | void             |
 | dragDrop                          | WebElement, WebElement        | void             |
