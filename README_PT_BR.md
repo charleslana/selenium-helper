@@ -262,7 +262,7 @@ Utilize o parâmetro name para definir um nome ou deixei em branco para salvar o
 | moveByClassName                   | String, Integer               | void             |
 | moveByCss                         | String                        | void             |
 | moveByCss                         | String, Integer               | void             |
-| moveById                          | Integer                       | void             |
+| moveById                          | String                        | void             |
 | moveByLinkText                    | String                        | void             |
 | moveByLinkText                    | String, Integer               | void             |
 | moveByName                        | String                        | void             |

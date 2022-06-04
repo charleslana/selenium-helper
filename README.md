@@ -263,7 +263,7 @@ Use the name parameter to define a name or leave it blank to save the video with
 | moveByClassName                   | String, Integer               | void             |
 | moveByCss                         | String                        | void             |
 | moveByCss                         | String, Integer               | void             |
-| moveById                          | Integer                       | void             |
+| moveById                          | String                        | void             |
 | moveByLinkText                    | String                        | void             |
 | moveByLinkText                    | String, Integer               | void             |
 | moveByName                        | String                        | void             |
