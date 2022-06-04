@@ -2,6 +2,7 @@ package charles.com.properties;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -25,8 +26,7 @@ public class PropertiesOperations {
     }
 
     private static String getSetupPropertyFile(String key) {
-        String propFilePath = System.getProperty("user.dir").concat("/src/test/resources/config.properties");
-        try (FileInputStream fileInputStream = new FileInputStream(propFilePath)) {
+        try (FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir").concat(String.format("%ssrc%stest%sresources%sconfig.properties", File.separator, File.separator, File.separator, File.separator)))) {
             properties.load(fileInputStream);
         } catch (Exception e) {
             e.printStackTrace();

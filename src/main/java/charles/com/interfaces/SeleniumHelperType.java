@@ -7,19 +7,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Type-in-element functionality class
+ * Type-in-element functionality interface
  *
  * @author Charles Lana
- * @version 1.0.0
+ * @version 1.1.0
  */
 public interface SeleniumHelperType extends SeleniumHelperElement {
-
-    Logger logger = LoggerFactory.getLogger(SeleniumHelperType.class);
 
     /**
      * Method that type on element by class name
      *
-     * @param className class name element
+     * @param className  class name element
+     * @param textToType text to type
      */
     default void typeByClassName(String className, CharSequence textToType) {
         try {
@@ -36,6 +35,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      *
      * @param className      class name element
      * @param classNameIndex class name index
+     * @param textToType     text to type
      */
     default void typeByClassName(String className, Integer classNameIndex, CharSequence textToType) {
         try {
@@ -50,7 +50,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by css
      *
-     * @param css css element
+     * @param css        css element
+     * @param textToType text to type
      */
     default void typeByCss(String css, CharSequence textToType) {
         try {
@@ -65,8 +66,9 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by css with index
      *
-     * @param css      css element
-     * @param cssIndex css index
+     * @param css        css element
+     * @param cssIndex   css index
+     * @param textToType text to type
      */
     default void typeByCss(String css, Integer cssIndex, CharSequence textToType) {
         try {
@@ -81,7 +83,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by id
      *
-     * @param id id element
+     * @param id         id element
+     * @param textToType text to type
      */
     default void typeById(String id, CharSequence textToType) {
         try {
@@ -96,7 +99,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by link text
      *
-     * @param linkText link text element
+     * @param linkText   link text element
+     * @param textToType text to type
      */
     default void typeByLinkText(String linkText, CharSequence textToType) {
         try {
@@ -113,6 +117,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      *
      * @param linkText      link text element
      * @param linkTextIndex link text index
+     * @param textToType    text to type
      */
     default void typeByLinkText(String linkText, Integer linkTextIndex, CharSequence textToType) {
         try {
@@ -127,7 +132,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by name
      *
-     * @param name name element
+     * @param name       name element
+     * @param textToType text to type
      */
     default void typeByName(String name, CharSequence textToType) {
         try {
@@ -142,8 +148,9 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by name with index
      *
-     * @param name      name element
-     * @param nameIndex name index
+     * @param name       name element
+     * @param nameIndex  name index
+     * @param textToType text to type
      */
     default void typeByName(String name, Integer nameIndex, CharSequence textToType) {
         try {
@@ -159,6 +166,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      * Method that type on element by partial link text
      *
      * @param partialLinkText link text partial element
+     * @param textToType      text to type
      */
     default void typeByPartialLinkText(String partialLinkText, CharSequence textToType) {
         try {
@@ -175,6 +183,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      *
      * @param partialLinkText      link text partial element
      * @param partialLinkTextIndex link text partial index
+     * @param textToType           text to type
      */
     default void typeByPartialLinkText(String partialLinkText, Integer partialLinkTextIndex, CharSequence textToType) {
         try {
@@ -189,7 +198,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by tag name
      *
-     * @param tagName tag name element
+     * @param tagName    tag name element
+     * @param textToType text to type
      */
     default void typeByTagName(String tagName, CharSequence textToType) {
         try {
@@ -206,6 +216,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      *
      * @param tagName      tag name element
      * @param tagNameIndex tag name index
+     * @param textToType   text to type
      */
     default void typeByTagName(String tagName, Integer tagNameIndex, CharSequence textToType) {
         try {
@@ -220,7 +231,8 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     /**
      * Method that type on element by xpath
      *
-     * @param xpath xpath element
+     * @param xpath      xpath element
+     * @param textToType text to type
      */
     default void typeByXpath(String xpath, CharSequence textToType) {
         try {
@@ -237,6 +249,7 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
      *
      * @param xpath      xpath element
      * @param xpathIndex xpath index
+     * @param textToType text to type
      */
     default void typeByXpath(String xpath, Integer xpathIndex, CharSequence textToType) {
         try {
@@ -257,12 +270,13 @@ public interface SeleniumHelperType extends SeleniumHelperElement {
     }
 
     private void setLog(String by, String selector, CharSequence textToType, Boolean isFail) {
+        Logger log = LoggerFactory.getLogger(SeleniumHelperType.class);
         if (Boolean.TRUE.equals(isFail)) {
-            logger.error("Could not type text {} to element by {} with selector {}", textToType, by, selector);
+            log.error("Could not type text {} to element by {} with selector {}", textToType, by, selector);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not type text %s to element by %s with selector %s", textToType, by, selector));
             return;
         }
-        logger.info("Type text {} to element by {} with selector {}", textToType, by, selector);
+        log.info("Type text {} to element by {} with selector {}", textToType, by, selector);
         ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Type text %s to element by %s with selector %s", textToType, by, selector));
     }
 }

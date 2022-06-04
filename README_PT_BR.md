@@ -59,7 +59,12 @@ pode excluir eles sem problemas, ***⚠ lembrando que não deve excluir a pasta 
 
 Basta clonar o projeto ou baixar o projeto para o seu ambiente.
 
-Após baixar e extrair o arquivo para uma pasta desejada, abra o projeto em sua IDE e baixe as dependências de
+```bash
+git clone https://github.com/charleslana/selenium-helper.git
+```
+
+Ou se preferir baixe o projeto em versões e extraia o arquivo para uma pasta desejada, abra o projeto em sua IDE e baixe
+as dependências de
 bibliotecas.
 
 Você navegará na pasta do projeto para o arquivo ExampleTest.java que está dentro da pasta test.
@@ -108,15 +113,41 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 }
 ```
 
+## 📹 Gravando os testes
+
+Você pode evidenciar seus testes de forma rápida utilizando a anotação @Recorder em cada teste, dessa forma será gravado
+um vídeo em formato .AVI na pasta test > resources > vídeo
+
+Utilize o parâmetro name para definir um nome ou deixei em branco para salvar o vídeo com o nome padrão.
+
+### 📝 Como gravar meus testes?
+
+```java
+    class MyTest extends SeleniumHelperTest implements SeleniumHelper {
+
+    @Test
+    @Recorder(name = "My test")
+    void myTest() {
+        navigate("https://www.selenium.dev/documentation");
+        clickByLinkText("Create documentation issue");
+        Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
+    }
+}
+```
+
 ## 🔑 API SeleniumHelper
 
-| Método                            | Parâmetros                    | Retorno          |
+| Method                            | Parameters                    | Return           |
 |-----------------------------------|-------------------------------|------------------|
 | getDriver                         |                               | WebDriver        |
 | getTitle                          |                               | String           |
 | getUrl                            |                               | String           |
 | navigate                          | String                        | void             |
+| navigateBack                      |                               | void             |
+| navigateForward                   |                               | void             |
+| navigateTo                        | String                        | void             |
 | await                             | Function                      | void             |
+| sleep                             | Integer                       | void             |
 | clearByClassName                  | String                        | void             |
 | clearByClassName                  | String, Integer               | void             |
 | clearByCss                        | String                        | void             |
@@ -215,6 +246,33 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
 | waitVisibilityByXpath             | String                        | void             |
 | waitVisibilityByXpath             | String, Integer               | void             |
 | switchWindow                      |                               | void             |
+| alertAccept                       |                               | void             |
+| alertDismiss                      |                               | void             |
+| getAlert                          |                               | getAlert         |
+| getAlertText                      |                               | String           |
+| typeAlert                         | String                        | void             |
+| dragDrop                          | WebElement, WebElement        | void             |
+| dragDropByLocation                | WebElement, Integer, Integer  | void             |
+| switchFrame                       |                               | void             |
+| switchFrame                       | Integer                       | void             |
+| switchFrame                       | String                        | void             |
+| switchFrame                       | WebElement                    | void             |
+| move                              | WebElement                    | void             |
+| moveByClassName                   | String                        | void             |
+| moveByClassName                   | String, Integer               | void             |
+| moveByCss                         | String                        | void             |
+| moveByCss                         | String, Integer               | void             |
+| moveById                          | Integer                       | void             |
+| moveByLinkText                    | String                        | void             |
+| moveByLinkText                    | String, Integer               | void             |
+| moveByName                        | String                        | void             |
+| moveByName                        | String, Integer               | void             |
+| moveByPartialLinkText             | String                        | void             |
+| moveByPartialLinkText             | String, Integer               | void             |
+| moveByTagName                     | String                        | void             |
+| moveByTagName                     | String, Integer               | void             |
+| moveByXpath                       | String                        | void             |
+| moveByXpath                       | String, Integer               | void             |
 
 ## 💻 Suporte
 

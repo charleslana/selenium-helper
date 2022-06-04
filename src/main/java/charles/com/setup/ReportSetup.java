@@ -6,6 +6,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Protocol;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -19,9 +20,7 @@ public class ReportSetup {
 
     public static ExtentReports setupExtentReport() {
         SimpleDateFormat format = new SimpleDateFormat(PropertiesOperations.getPropertyValueByKey("report-datetime-format"));
-        Date date = new Date();
-        String actualDate = format.format(date);
-        reportPath = System.getProperty("user.dir").concat(String.format("/src/test/resources/reports/Selenium Helper Report %s.html", actualDate));
+        reportPath = System.getProperty("user.dir").concat(String.format("%ssrc%stest%sresources%sreports%sReport-%s.html", File.separator, File.separator, File.separator, File.separator, File.separator, format.format(new Date())));
         ExtentSparkReporter sparkReport = new ExtentSparkReporter(reportPath);
         return setupExtent(sparkReport);
     }

@@ -58,8 +58,14 @@ Is an IDE that compiles Java, IntelliJ, Netbeans, Eclipse is required.
 
 Just clone the project or download the project to your environment.
 
-After downloading and extracting the file to a desired folder, open the project in your IDE and download the library
-dependencies.
+```bash
+git clone https://github.com/charleslana/selenium-helper.git
+```
+
+Or if you prefer to download the project in versions and extract the file to a desired folder, open the project in your
+IDE and download
+the dependencies of
+libraries.
 
 You will navigate in the project folder to the ExampleTest.java file that is inside the test folder.
 
@@ -108,6 +114,28 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 }
 ```
 
+## 📹 Recording the tests
+
+You can quickly evidence your tests using the @Recorder annotation on each test, that way it will be recorded
+a video in .AVI format in the test > resources > video folder
+
+Use the name parameter to define a name or leave it blank to save the video with the default name.
+
+### 📝 How to record my tests?
+
+```java
+    class MyTest extends SeleniumHelperTest implements SeleniumHelper {
+
+    @Test
+    @Recorder(name = "My test")
+    void myTest() {
+        navigate("https://www.selenium.dev/documentation");
+        clickByLinkText("Create documentation issue");
+        Assertions.assertEquals(getUrl(), "https://www.selenium.dev/documentation/");
+    }
+}
+```
+
 ## 🔑 SeleniumHelper API
 
 | Method                            | Parameters                    | Return           |
@@ -116,7 +144,11 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 | getTitle                          |                               | String           |
 | getUrl                            |                               | String           |
 | navigate                          | String                        | void             |
+| navigateBack                      |                               | void             |
+| navigateForward                   |                               | void             |
+| navigateTo                        | String                        | void             |
 | await                             | Function                      | void             |
+| sleep                             | Integer                       | void             |
 | clearByClassName                  | String                        | void             |
 | clearByClassName                  | String, Integer               | void             |
 | clearByCss                        | String                        | void             |
@@ -215,6 +247,33 @@ The examples listed can serve as a pattern for your tests as it is based on comp
 | waitVisibilityByXpath             | String                        | void             |
 | waitVisibilityByXpath             | String, Integer               | void             |
 | switchWindow                      |                               | void             |
+| alertAccept                       |                               | void             |
+| alertDismiss                      |                               | void             |
+| getAlert                          |                               | getAlert         |
+| getAlertText                      |                               | String           |
+| typeAlert                         | String                        | void             |
+| dragDrop                          | WebElement, WebElement        | void             |
+| dragDropByLocation                | WebElement, Integer, Integer  | void             |
+| switchFrame                       |                               | void             |
+| switchFrame                       | Integer                       | void             |
+| switchFrame                       | String                        | void             |
+| switchFrame                       | WebElement                    | void             |
+| move                              | WebElement                    | void             |
+| moveByClassName                   | String                        | void             |
+| moveByClassName                   | String, Integer               | void             |
+| moveByCss                         | String                        | void             |
+| moveByCss                         | String, Integer               | void             |
+| moveById                          | Integer                       | void             |
+| moveByLinkText                    | String                        | void             |
+| moveByLinkText                    | String, Integer               | void             |
+| moveByName                        | String                        | void             |
+| moveByName                        | String, Integer               | void             |
+| moveByPartialLinkText             | String                        | void             |
+| moveByPartialLinkText             | String, Integer               | void             |
+| moveByTagName                     | String                        | void             |
+| moveByTagName                     | String, Integer               | void             |
+| moveByXpath                       | String                        | void             |
+| moveByXpath                       | String, Integer               | void             |
 
 ## 💻 Support
 
@@ -238,7 +297,7 @@ Please follow the [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) of this project.
 
 ## 🎥 Demo
 
-Access the demo video and use [YouTube](https://youtu.be/4_xqpoCL5L4)
+Access the demo recorder and use [YouTube](https://youtu.be/4_xqpoCL5L4)
 
 ## 📄 License
 

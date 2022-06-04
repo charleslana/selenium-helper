@@ -6,14 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Element click functionality class
+ * Element click functionality interface
  *
  * @author Charles Lana
- * @version 1.0.0
+ * @version 1.1.0
  */
 public interface SeleniumHelperClick extends SeleniumHelperElement {
-
-    Logger logger = LoggerFactory.getLogger(SeleniumHelperClick.class);
 
     /**
      * Method that clicks on element by class name
@@ -252,12 +250,13 @@ public interface SeleniumHelperClick extends SeleniumHelperElement {
     }
 
     private void setLog(String by, String selector, Boolean isFail) {
+        Logger log = LoggerFactory.getLogger(SeleniumHelperClick.class);
         if (Boolean.TRUE.equals(isFail)) {
-            logger.error("Could not click element by {} with selector {}", by, selector);
+            log.error("Could not click element by {} with selector {}", by, selector);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not click element by %s with selector %s", by, selector));
             return;
         }
-        logger.info("Click element by {} with selector {}", by, selector);
+        log.info("Click element by {} with selector {}", by, selector);
         ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Click element by %s with selector %s", by, selector));
     }
 }

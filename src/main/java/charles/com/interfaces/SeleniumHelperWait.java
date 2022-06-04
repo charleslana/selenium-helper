@@ -10,14 +10,12 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * Class for wait functionality
+ * Interface for wait functionality
  *
  * @author Charles Lana
- * @version 1.0.0
+ * @version 1.1.0
  */
 public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperElement {
-
-    Logger logger = LoggerFactory.getLogger(SeleniumHelperWait.class);
 
     /**
      * Method that wait invisibility by element
@@ -290,10 +288,10 @@ public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperE
     default void waitUrlContains(String path) {
         try {
             await(ExpectedConditions.urlContains(path));
-            logger.info("Wait url contain path {}", path);
+            log().info("Wait url contain path {}", path);
             ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Wait url contain path %s", path));
         } catch (Exception e) {
-            logger.error("Could not wait url contain path {}", path);
+            log().error("Could not wait url contain path {}", path);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not wait url contain path %s", path));
             e.printStackTrace();
         }
@@ -562,17 +560,21 @@ public interface SeleniumHelperWait extends SeleniumHelperAwait, SeleniumHelperE
         }
     }
 
-    private void setLog(String by, Object selector, String visibility) {
-        setLog(by, selector, visibility, false);
+    private Logger log() {
+        return LoggerFactory.getLogger(SeleniumHelperWait.class);
     }
 
     private void setLog(String by, Object selector, String visibility, Boolean isFail) {
         if (Boolean.TRUE.equals(isFail)) {
-            logger.error("Could not wait element by {} with selector {} to {}", by, selector, visibility);
+            log().error("Could not wait element by {} with selector {} to {}", by, selector, visibility);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not wait element by %s with selector %s to %s", by, selector, visibility));
             return;
         }
-        logger.info("Wait element by {} with selector {} to {}", by, selector, visibility);
+        log().info("Wait element by {} with selector {} to {}", by, selector, visibility);
         ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Wait element by %s with selector %s to %s", by, selector, visibility));
+    }
+
+    private void setLog(String by, Object selector, String visibility) {
+        setLog(by, selector, visibility, false);
     }
 }

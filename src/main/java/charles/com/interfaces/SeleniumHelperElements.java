@@ -12,14 +12,12 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * Class get all page elements
+ * Interface get all page elements
  *
  * @author Charles Lana
- * @version 1.0.0
+ * @version 1.1.0
  */
 public interface SeleniumHelperElements {
-
-    Logger logger = LoggerFactory.getLogger(SeleniumHelperElements.class);
 
     /**
      * Method that fetches all page element by
@@ -174,12 +172,13 @@ public interface SeleniumHelperElements {
     }
 
     private void setLog(String by, Object selector, Boolean isFail) {
+        Logger log = LoggerFactory.getLogger(SeleniumHelperElements.class);
         if (Boolean.TRUE.equals(isFail)) {
-            logger.error("Could not find elements by {} with selector {}", by, selector);
+            log.error("Could not find elements by {} with selector {}", by, selector);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not find elements by %s with selector %s", by, selector));
             return;
         }
-        logger.info("Find elements by {} with selector {}", by, selector);
+        log.info("Find elements by {} with selector {}", by, selector);
         ExtentFactory.getInstance().getExtent().log(Status.PASS, String.format("Find elements by %s with selector %s", by, selector));
     }
 }
