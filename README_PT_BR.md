@@ -77,15 +77,16 @@ Após a instalação navegue até o arquivo que está na pasta resources do ambi
 
 Este arquivo possui configurações de entrada para qual critério deseja acionar
 
-| Parâmetro               | Valores                 | Padrão                                                                                                   |
-|-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
-| browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
-| headless                | (true ou false)         | false                                                                                                    |
-| web-driver-wait         | número inteiro          | 10                                                                                                       |
-| report-theme            | (standard, dark)        | dark                                                                                                     |
-| report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
-| report-datetime-format  | formato de datatime     | yyyy-MM-dd HH-mm-ss                                                                                      |
-| open-report-after-tests | (true ou false)         | true                                                                                                     |
+| Parâmetro               | Valores                                                             | Padrão                                                                                                   |
+|-------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| browser                 | (chrome, chrome-remote, edge, edge-remote, firefox, firefox-remote) | chrome                                                                                                   |
+| headless                | (true ou false)                                                     | false                                                                                                    |
+| web-driver-wait         | número inteiro                                                      | 10                                                                                                       |
+| report-theme            | (standard, dark)                                                    | dark                                                                                                     |
+| report-logo-url         | texto url                                                           | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
+| report-datetime-format  | formato de datatime                                                 | yyyy-MM-dd HH-mm-ss                                                                                      |
+| open-report-after-tests | (true ou false)                                                     | true                                                                                                     |
+| remote-url              | texto url                                                           | http://localhost:4444/wd/hub/                                                                            |
 
 ## 🐛 Os Testes
 
@@ -112,6 +113,10 @@ Os exemplos listados podem servir como uma padrão de seus testes pois se baseia
     }
 }
 ```
+
+### 📡 Como testar pelo docker?
+
+Utilize os browser remotos do arquivo de configuração e configure a url remoto
 
 ## 📹 Gravando os testes
 

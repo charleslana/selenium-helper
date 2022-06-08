@@ -16,7 +16,7 @@ import java.util.function.Function;
  * Interface for await functionality
  *
  * @author Charles Lana
- * @version 1.1.0
+ * @version 1.1.1
  */
 public interface SeleniumHelperAwait {
 
@@ -51,7 +51,7 @@ public interface SeleniumHelperAwait {
         } catch (InterruptedException e) {
             log().error("Could not wait for sleep in {} milliseconds", milliseconds);
             ExtentFactory.getInstance().getExtent().log(Status.FAIL, String.format("Could not wait for sleep in %s milliseconds", milliseconds));
-            throw new RuntimeException(e);
+            throw new IllegalArgumentException(e);
         }
     }
 

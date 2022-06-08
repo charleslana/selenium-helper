@@ -78,15 +78,16 @@ config.properties.
 
 This file has input settings for which criteria you want to trigger
 
-| Parameter               | Values                  | Default                                                                                                  |
-|-------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|
-| browser                 | (chrome, firefox, edge) | chrome                                                                                                   |
-| headless                | (true or false)         | false                                                                                                    |
-| web-driver-wait         | number integer          | 10                                                                                                       |
-| report-theme            | (standard, dark)        | dark                                                                                                     |
-| report-logo-url         | string url              | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
-| report-datetime-format  | datetime format         | yyyy-MM-dd HH-mm-ss                                                                                      |
-| open-report-after-tests | (true or false)         | true                                                                                                     |
+| Parameter               | Values                                                              | Default                                                                                                  |
+|-------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| browser                 | (chrome, chrome-remote, edge, edge-remote, firefox, firefox-remote) | chrome                                                                                                   |
+| headless                | (true or false)                                                     | false                                                                                                    |
+| web-driver-wait         | number integer                                                      | 10                                                                                                       |
+| report-theme            | (standard, dark)                                                    | dark                                                                                                     |
+| report-logo-url         | string url                                                          | https://raw.githubusercontent.com/charleslana/test/579b6782913acc56571ce7d25fd1707dd6edce08/selenium.svg |
+| report-datetime-format  | datetime format                                                     | yyyy-MM-dd HH-mm-ss                                                                                      |
+| open-report-after-tests | (true or false)                                                     | true                                                                                                     |
+| remote-url              | string url                                                          | http://localhost:4444/wd/hub/                                                                            |
 
 ## 🐛 The Tests
 
@@ -113,6 +114,10 @@ The examples listed can serve as a pattern for your tests as it is based on comp
     }
 }
 ```
+
+### 📡 How to test by docker?
+
+Use the configuration file remote browsers and configure the remote url
 
 ## 📹 Recording the tests
 

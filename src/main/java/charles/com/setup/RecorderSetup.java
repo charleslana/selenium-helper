@@ -24,7 +24,9 @@ public class RecorderSetup extends ScreenRecorder {
 
     @Override
     protected File createMovieFile(Format fileFormat) throws IOException {
-        if (!movieFolder.isDirectory()) {
+        if (!movieFolder.exists()) {
+            movieFolder.mkdirs();
+        } else if (!movieFolder.isDirectory()) {
             throw new IOException(String.format("%s is not a directory.", movieFolder));
         }
         SimpleDateFormat dateFormat = new SimpleDateFormat(PropertiesOperations.getPropertyValueByKey("report-datetime-format"));
