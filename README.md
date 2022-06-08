@@ -34,6 +34,7 @@ Selenium Helper has integration with the following technologies:
 - Extent report
 - Lombok
 - Apache Commons
+- Monte Screen Recorder
 
 ## 🏘 Architecture
 
@@ -93,11 +94,11 @@ This file has input settings for which criteria you want to trigger
 
 With the help of Junit that comes in the project you can create several test cases,
 It is important to know that after creating a test class it is necessary to extend the SeleniumHelperTest class and
-implement the SeleniumHelper class
+implement the SeleniumHelper interface
 
 `SeleniumHelperTest` - Class to start initial test settings
 
-`SeleniumHelper` - Class responsible for page element controls
+`SeleniumHelper` - Interface responsible for page element controls
 
 The examples listed can serve as a pattern for your tests as it is based on components with separate interfaces.
 

@@ -35,6 +35,7 @@ Selenium Helper possui integração com as seguintes tecnologias:
 - Extent report
 - Lombok
 - Apache Commons
+- Monte Screen Recorder
 
 ## 🏘 Arquitetura
 
@@ -92,11 +93,11 @@ Este arquivo possui configurações de entrada para qual critério deseja aciona
 
 Com a ajuda do Junit que vem no projeto você pode criar vários casos de testes,
 É importante saber que após criar um classe de teste é necessário que faça a extensão da classe SeleniumHelperTest e
-implementação da classe SeleniumHelper
+implementação da interface SeleniumHelper
 
 `SeleniumHelperTest` - Classe para iniciar as configurações iniciais de teste
 
-`SeleniumHelper` - Classe responsável pelos controles de elemento de página
+`SeleniumHelper` - Interface responsável pelos controles de elemento de página
 
 Os exemplos listados podem servir como uma padrão de seus testes pois se baseia em componentes com interfaces separadas.
 
